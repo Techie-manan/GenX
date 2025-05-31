@@ -1,78 +1,24 @@
-// CenterBlobParticles.jsx
-import { useRef, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
-import * as THREE from "three";
+import React from 'react'
+import "./home.css"
 
-export function CenterBlob() {
-  const refOuter = useRef();
-  const refInner = useRef();
-
-  // Create particle positions for a ring shape
-  const createRing = (radius, count, yOffset = 0) => {
-    const positions = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      const angle = (i / count) * Math.PI * 2;
-      const x = radius * Math.cos(angle);
-      const y = yOffset;
-      const z = radius * Math.sin(angle);
-      positions.set([x, y, z], i * 3);
-    }
-    return positions;
-  };
-
-  const outerRing = useMemo(() => createRing(1.2, 300, 0.1), []);
-  const innerRing = useMemo(() => createRing(0.6, 200, -0.1), []);
-
-  useFrame(({ clock }) => {
-    const t = clock.getElapsedTime();
-    if (refOuter.current) {
-      refOuter.current.rotation.y = t * 0.2;
-      refOuter.current.rotation.x = Math.sin(t * 0.1) * 0.1;
-    }
-    if (refInner.current) {
-      refInner.current.rotation.y = -t * 0.25;
-    }
-  });
-
+export function CenterBlob()  {
   return (
     <>
-      <points ref={refOuter}>
-        <bufferGeometry>
-          <bufferAttribute
-            attach="attributes-position"
-            array={outerRing}
-            count={outerRing.length / 3}
-            itemSize={3}
-          />
-        </bufferGeometry>
-        <pointsMaterial
-          size={0.03}
-          color="lavender"
-          transparent
-          opacity={0.8}
-          sizeAttenuation
-          depthWrite={false}
-        />
-      </points>
+    <div className="relative w-[100vw] h-[100vh] z-10"></div>
+    <div className="rot1">
+      <div className="urv1"></div>
+      <div className="urv2"></div>
+    </div>
+    <div className="rot2">
+      <div className="urv3"></div>
+      <div className="urv4"></div>
+    </div>
 
-      <points ref={refInner}>
-        <bufferGeometry>
-          <bufferAttribute
-            attach="attributes-position"
-            array={innerRing}
-            count={innerRing.length / 3}
-            itemSize={3}
-          />
-        </bufferGeometry>
-        <pointsMaterial
-          size={0.02}
-          color="lavender"
-          transparent
-          opacity={0.6}
-          sizeAttenuation
-          depthWrite={false}
-        />
-      </points>
+    {/* <div className="rot1">
+      <img src="./genesis.jpg" alt="" className='h-100' />
+    </div> */}
     </>
-  );
+  )
 }
+
+export default CenterBlob
