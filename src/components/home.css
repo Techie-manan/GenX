@@ -37,6 +37,7 @@
     width: 500px;
     position: absolute;
     left: 30%;
+    top: 10%;
     display: flex;
     flex-direction: column  ;
     justify-content: space-around;
@@ -108,4 +109,10 @@
     to {
         transform: rotate(0deg);
     }
+}
+
+.centre {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
