@@ -8,8 +8,8 @@ const home = () => {
                     <h3>Hack with us at</h3>
                     <h1>HackMela 1.0</h1>
                      <h3>12 September - 12 October 2025</h3>
-                     <div className="centre">
-                        <button>Events</button>
+                     <div className="centre ">
+                        <button className='bg-black text-white'>Events</button>
                         <button>Register Now!!</button>
                      </div>
                 </div>
