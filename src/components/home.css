@@ -122,8 +122,21 @@
     font-size: large;
 }
 
-.pink-white {
+.puw {
     background: linear-gradient(180deg, #8a08f5 0%, #e0d8eb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.txt {
+    text-shadow: 0px 4px 4px rgba(160, 27, 221, 0.25);
+}
+
+.bub {
+    background: linear-gradient(180deg, black 20%, #05011a 100%);
+}
+
+.bg {
+    background-color: #05011a;
+}
+

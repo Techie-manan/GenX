@@ -3,11 +3,11 @@ import React from 'react'
 const home = () => {
     return (
         <>
-            <div className="absolute left-1/4 top-1/4 z-10 backdrop-blur-xl h-[80vh]">
+            <div className="absolute left-1/4 top-1/4 z-10  ">
                 <div className="centre flex-col text-center text-white gap-8">
                     <div className="centre flex-col text-center text-white gap-2">
                     <h3 className='xl font-bold'>Hack with us at</h3>
-                    <h1 className='text-8xl font-bold pink-white'>HackMela 1.0</h1>
+                    <h1 className='text-8xl font-bold puw'>HackMela 1.0</h1>
                      <h3 className='xl font-bold'>12 September - 12 October 2025</h3>
                      </div>
                      <div className="centre gap-5">

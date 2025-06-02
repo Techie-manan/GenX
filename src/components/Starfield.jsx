@@ -10,7 +10,7 @@ export function Starfield() {
   // Prepare 1000 stars with position + inward velocity
   const stars = useMemo(() => {
     const data = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 5000; i++) {
       const pos = new THREE.Vector3(
         (Math.random() - 0.5) * 50,
         (Math.random() - 0.5) * 50,
@@ -36,9 +36,9 @@ export function Starfield() {
       // Reset star if it reaches too close
       if (dist < 0.5) {
         star.position.set(
-          (Math.random() - 0.5) * 50,
-          (Math.random() - 0.5) * 50,
-          (Math.random() - 0.5) * 50
+          (Math.random() - 0.5) * 500,
+          (Math.random() - 0.5) * 500,
+          (Math.random() - 0.5) * 500
         );
         star.velocity = star.position.clone().normalize().multiplyScalar(-0.05);
       }
