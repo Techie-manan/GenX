@@ -3,14 +3,16 @@ import React from 'react'
 const home = () => {
     return (
         <>
-            <div className="absolute top-0 left-0 w-[100vw] h-[100vh] centre z-10">
-                <div className="centre flex-col text-center text-white bg-white">
-                    <h3>Hack with us at</h3>
-                    <h1>HackMela 1.0</h1>
-                     <h3>12 September - 12 October 2025</h3>
-                     <div className="centre ">
-                        <button className='bg-black text-white'>Events</button>
-                        <button>Register Now!!</button>
+            <div className="absolute left-1/4 top-1/4 z-10 backdrop-blur-xl h-[80vh]">
+                <div className="centre flex-col text-center text-white gap-8">
+                    <div className="centre flex-col text-center text-white gap-2">
+                    <h3 className='xl font-bold'>Hack with us at</h3>
+                    <h1 className='text-8xl font-bold pink-white'>HackMela 1.0</h1>
+                     <h3 className='xl font-bold'>12 September - 12 October 2025</h3>
+                     </div>
+                     <div className="centre gap-5">
+                        <button className='bg-black text-white xl p-2 px-5 rounded-bl-3xl rounded-tr-3xl '>Events </button>
+                        <button className='bg-black text-white xl p-2 px-5 rounded-br-3xl rounded-tl-3xl'>Register Now!! </button>
                      </div>
                 </div>
             </div>

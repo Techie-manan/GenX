@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <>
-    <div className="relative w-full h-full bg-black overflow-hidden">
+    <div className="relative w-[100vw] h-[100vh] bg-black overflow-hidden -z-10">
       <HeroScene />
       <CenterBlob />
           <Home/>

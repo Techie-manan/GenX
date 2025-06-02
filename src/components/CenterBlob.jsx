@@ -4,7 +4,7 @@ import "./home.css"
 export function CenterBlob() {
   return (
     <>
-      <div className="relative w-[100vw] h-[100vh] z-1">
+      <div className="absolute left-1/3 top-1/10 z-1">
         {/* <div className="rot1">
       <div className="urv1"></div>
       <div className="urv2"></div>
