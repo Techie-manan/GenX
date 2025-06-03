@@ -40,7 +40,7 @@
     left: 30%;
     top: 10%; */
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transform-origin: center;
@@ -90,7 +90,7 @@
     rotate: 90deg;
 }
 
-.rot2{
+.rot2 {
     height: 700px;
     width: 500px;
     position: absolute;
@@ -140,3 +140,14 @@
     background-color: #05011a;
 }
 
+.text {
+    text-shadow: 5px 5px 10px rgba(112, 116, 117, 0.4);
+}
+
+.textp {
+    text-shadow: 5px 5px 10px rgba(152, 26, 202, 0.4);
+}
+
+.textr {
+    text-shadow: 5px 5px 10px rgba(241, 14, 14, 0.4);
+}
