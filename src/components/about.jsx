@@ -3,7 +3,7 @@ import React from 'react'
 const about = () => {
     return (
         <>
-            <div className='h-[10vh] bub w-[100vw] px-[5vw]'> </div>
+            <div className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
             <div className='z-10 text-white bg'>
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
                 <div className='centre flex-col gap-15 px-[5vw]'>
@@ -63,7 +63,23 @@ const about = () => {
                         </div>
                     </div>
                 </div>
+                <h1 className='text-center text-5xl font-bold p-5 mt-10'>Themes</h1>
+                <div className="centre flex-col md:flex-row gap-5 justify-around text-center h-[35vh] px-[5vw]">
+                    <div className="card capsule w-2/3 md:flex-1/4 bg-[url('/web3.jpeg')] bg-cover bg-center h-[35vh]">
+                    </div>
+                    <div className="card centre capsule w-2/3 md:flex-1/4 bg-[url('/fusion.png')] bg-cover bg-center     h-[35vh] flex items-center justify-center">
+                        <h2 className='p-5 text-xl font-semibold text-white text-center'>
+                            AI x Web3 <br /> Fusion
+                        </h2>
+                    </div>
+
+                    <div className="card centre capsule w-2/3 md:flex-1/4 bg-[url('/ai.png')] bg-cover bg-center h-[35vh] flex justify-center items-center">
+                        <h2 className='p-2 text-2xl font-semibold text-center'>AI</h2>
+                    </div>
+                </div>
             </div>
+            {/* <div className='h-[10vh] bub w-[100vw] px-[5vw]'> </div> */}
+
         </>
     )
 }

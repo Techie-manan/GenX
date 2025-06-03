@@ -151,3 +151,9 @@
 .textr {
     text-shadow: 5px 5px 10px rgba(241, 14, 14, 0.4);
 }
+
+.capsule {
+    box-shadow: inset 0px 0px 16px 0px rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    border: 1px solid rgba(95, 95, 113, 0.22);
+}
