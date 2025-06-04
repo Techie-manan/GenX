@@ -114,7 +114,7 @@
 
 .centre {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -155,5 +155,14 @@
 .capsule {
     box-shadow: inset 0px 0px 16px 0px rgba(255, 255, 255, 0.08);
     border-radius: 50px;
+    border: 1px solid rgba(95, 95, 113, 0.22);
+}
+
+.box {
+  height: 65px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 16px 0px rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 20px;
     border: 1px solid rgba(95, 95, 113, 0.22);
 }

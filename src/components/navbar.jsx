@@ -3,7 +3,7 @@ import React from 'react'
 const navbar = () => {
   return (
     <>
-      <div className="centre justify-between fixed w-[90vw] mx-[5vw] rounded-b-2xl z-50 justify-self-center p-5 xl font-semibold gap-5 backdrop-blur-xl text-white bg-black/50">
+      <div className="flex items-center justify-between fixed w-[90vw] mx-[5vw] rounded-b-2xl z-50 justify-self-center p-5 xl font-semibold gap-5 backdrop-blur-xl text-white bg-black/50">
         <div className="flex">
           <img src="" alt="" />
           <h1> HackMela </h1>

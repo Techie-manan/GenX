@@ -4,6 +4,10 @@ import Home from "./components/home";
 import Navbar from "./components/navbar";
 import './App.css';
 import About from "./components/about";
+import Team from "./components/team";
+import Sponsers from "./components/sponsers";
+import Faq from "./components/faq";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
           <Home />
         </div>
         <About />
+        <Team />
+        <Sponsers />
+      <Faq />
+      <Contact />
       </div>
     </>
   );

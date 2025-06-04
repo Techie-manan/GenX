@@ -7,7 +7,7 @@ const about = () => {
             <div className='z-10 text-white bg'>
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
                 <div className='centre flex-col gap-15 px-[5vw]'>
-                    <div className='text-center p-8 pb-20 md:w-1/3  rounded-2xl shadow-lg shadow-gray-500 '>
+                    <div className='text-center p-8 pb-20 md:w-1/3 rounded-2xl shadow-lg shadow-gray-500 '>
                         <h1 className='text-3xl font-semibold pb-5 text'>HackMela'25</h1>
                         <p> HackMela is not just another hackathon; it's a month-long
                             festival of innovation, culminating in a spectacular 3-day
@@ -28,7 +28,7 @@ const about = () => {
                             breakthroughs. Partner with HackMela and invest in the
                             future of innovation.</p>
                     </div>
-                    <div className="centre flex-col md:flex-row md:justify-around gap-5">
+                    <div className="flex items-center flex-col md:flex-row md:justify-around gap-5">
                         <div className='text-center p-5 pb-20 md:w-1/3  rounded-2xl shadow-lg shadow-fuchsia-500'>
                             <h2 className='text-3xl font-semibold pb-5 textp'>Genesis</h2>
                             <p> We are a student-led Web3 Club committed to
@@ -45,7 +45,7 @@ const about = () => {
                                 connecting — shaping the next generation of tech
                                 leaders.</p>
                         </div>
-                        <div className='text-center p-5 pb-20 md:w-1/3  rounded-2xl shadow-lg shadow-red-500'>
+                        <div className='text-center p-5 pb-20 md:w-1/3 rounded-2xl shadow-lg shadow-red-500'>
                             <h2 className='text-3xl font-semibold pb-5 textr'>CodeX</h2>
                             <p> We are a student-led Web3 Club committed to
                                 exploring and advancing the future of decentralized
