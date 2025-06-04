@@ -8,6 +8,7 @@ import Team from "./components/team";
 import Sponsers from "./components/sponsers";
 import Faq from "./components/faq";
 import Contact from "./components/contact";
+import Events from "./components/events";
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
           <Home />
         </div>
         <About />
+        <Events />
         <Team />
         <Sponsers />
-      <Faq />
-      <Contact />
+        <Faq />
+        <Contact />
       </div>
     </>
   );

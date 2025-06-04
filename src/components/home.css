@@ -166,3 +166,19 @@
     padding: 20px;
     border: 1px solid rgba(95, 95, 113, 0.22);
 }
+
+.circle{
+    border-radius: 100%;
+    padding: 10px;
+    border: 1px solid rgba(191, 191, 201, 0.22);
+    background-color: rgb(230, 196, 196);
+    position: absolute;
+   left: -225%;
+    z-index: 50;
+}
+
+.box2 {
+       border: 1px solid rgba(95, 95, 113, 0.22);
+     border-radius: 20px;
+
+}
