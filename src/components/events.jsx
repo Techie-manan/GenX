@@ -40,7 +40,7 @@ const events = () => {
                                         <div className="text-xl font-semibold">Capture the Flag(CTF) Challenge</div>
                                         <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
                                         <ul className='mt-2 list-disc'>
-                                            <li>Cybersecurity-based real-time problem-solving event</li>
+                                            <li>Web3-based real-time problem-solving event</li>
                                              <li>Exclusively for SRM students</li>
                                             <li> Winning team gains direct entry to the main hackathon</li>
                                         </ul>
