@@ -185,16 +185,29 @@
     padding: 12px;
     position: absolute;
     left: 175%;
-    width: 40vw;
+    width: 80vw;
 }
 
-.box3{
-     border: 1px solid rgba(95, 95, 113, 0.22);
+.box3 {
+    border: 1px solid rgba(95, 95, 113, 0.22);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 12px;
     position: absolute;
-    left: -2800%;
-    width: 40vw;
+    left: 175%;
+    width: 80vw;
+}
+
+@media (min-width: 992px) {
+
+    .box3 {
+        left: -2550%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        width: 500px;
+    }
+    .box2 {
+        width: 500px;
+    }
 }

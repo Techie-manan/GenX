@@ -1,13 +1,16 @@
 import React from 'react'
+import FadeLeft from './OnscrollAni/fadeleft'
+import FadeRight from './OnscrollAni/faderight'
 
 const events = () => {
     return (
         <>
             <div className='z-10 text-white bg pt-10 pb-27'>
                 <h1 className='text-center text-5xl font-bold p-5 '>Timeline</h1>
-                <div className='w-[100vw] h-250 relative mt-5 centre'>
+                <div className='w-[100vw] h-400 sm:h-300 mt-5 pl-5 flex lg:justify-center lg:pl-0'>
                     <div className='w-1 relative h-full bg-gray-500 rounded-full z-20'>
                         <div className="circle -top-1">
+                            <FadeRight>
                             <div className='shadow-lg shadow-fuchsia-500 box2'>
                                 <div className="flex gap-5">
                                     <div>
@@ -26,6 +29,7 @@ const events = () => {
                                     </div>
                                 </div>
                             </div>
+                            </FadeRight>
                         </div>
                         <div className="circle top-1/5">
                             <div className='shadow-lg shadow-red-500 box3'>
