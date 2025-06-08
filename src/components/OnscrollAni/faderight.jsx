@@ -21,6 +21,7 @@ export default function FadeRight({ children, delay = 0 }) {
       ref={ref}
       initial={{ opacity: 0, x: 60 }}
       animate={controls}
+       style={{ willChange: "transform" }}
     >
       {children}
     </motion.div>
