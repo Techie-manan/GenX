@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-.urv1 {
-    /* Ellipse 14 */
+/* .urv1 {
+    /* Ellipse 14 
 
     box-sizing: border-box;
     width: 478px;
@@ -17,7 +17,7 @@
 }
 
 .urv2 {
-    /* Ellipse 14 */
+    /* Ellipse 14 
 
     box-sizing: border-box;
 
@@ -38,7 +38,7 @@
     width: 500px;
     /* position: absolute;
     left: 30%;
-    top: 10%; */
+    top: 10%; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -58,7 +58,7 @@
 }
 
 .urv3 {
-    /* Ellipse 14 */
+    /* Ellipse 14 
 
     box-sizing: border-box;
     width: 300px;
@@ -75,7 +75,7 @@
 
 
 .urv4 {
-    /* Ellipse 14 */
+    /* Ellipse 14 
 
     box-sizing: border-box;
     width: 300px;
@@ -110,7 +110,7 @@
     to {
         transform: rotate(0deg);
     }
-}
+} */
 
 .centre {
     display: flex;
