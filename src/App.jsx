@@ -15,7 +15,7 @@ function App() {
     <>
       <div className="w-full overflow-hidden">
         <Navbar />
-        <div className="relative w-[100vw] h-[100vh] bg-black overflow-hidden -z-10">
+        <div id='home' className="relative w-[100vw] h-[100vh] bg-black overflow-hidden -z-10">
           <HeroScene />
           {/* <CenterBlob /> */}
           <Home />

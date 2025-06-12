@@ -6,7 +6,7 @@ import FadeUp from './OnscrollAni/fadeup'
 const about = () => {
     return (
         <>
-            <div className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
+            <div id='about' className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
             <div className='z-10 text-white bg'>
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
                 <div className='centre flex-col gap-15 px-[5vw]'>

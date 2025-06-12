@@ -3,7 +3,7 @@ import React from 'react'
 const contact = () => {
     return (
         <>
-            <div className='z-10 text-white bg pt-10 px-[5vw]'>
+            <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'>
                 <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
                 <div className="flex justify-around">
                     <div>HackMela 1.0</div>
