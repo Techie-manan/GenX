@@ -25,12 +25,12 @@ const FaqItem = ({ question, answer }) => {
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: contentRef.current?.scrollHeight, opacity: 1 }}
+            animate={{ height: contentRef.current?.scrollHeight || 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4 }}
             className='overflow-hidden'
           >
-            <div ref={contentRef} className='mt-3 text-base text-gray-300 whitespace-pre-line'>
+            <div ref={contentRef} className='w-full z-10 mt-3 text-base text-gray-300 whitespace-pre-line'>
               {answer}
             </div>
           </motion.div>

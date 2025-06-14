@@ -3,6 +3,7 @@ import React from 'react'
 const contact = () => {
     return (
         <>
+        <div className="relative">
             <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'>
                 <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
                 <div className="flex justify-around">
@@ -19,6 +20,10 @@ const contact = () => {
                     <span>|</span>
                     <a href="">Contact Us</a>
                 </h3>
+            </div>
+            <div className="absolute -top-full left-0 w-full h-full -z-10">
+                <img src="download.jpeg" alt="" />
+            </div>
             </div>
         </>
     )

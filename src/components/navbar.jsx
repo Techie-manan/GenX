@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScroll('home')}>
-          <img src="" alt="logo" className="h-8" />
+          {/* <img src="" alt="logo" className="h-8" /> */}
           <h1 className="text-xl font-bold">HackMela</h1>
         </div>
 
