@@ -7,7 +7,7 @@ const home = () => {
                 <div className="centre flex-col text-center text-white gap-8">
                     <div className="centre flex-col text-center text-white gap-2">
                     <h3 className='xl font-bold '>Hack with us at</h3>
-                    <h1 className='text-8xl font-bold puw font-vamos'>HackMela 1.0</h1>
+                    <h1 className='text-8xl font-bold puw font-vamos'>HackComet 1.0</h1>
                      <h3 className='xl font-bold'>12 September - 12 October 2025</h3>
                      </div>
                      <div className="centre gap-5">
