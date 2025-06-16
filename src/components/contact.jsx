@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaInstagram, FaLinkedin, FaXTwitter, FaDiscord, FaWhatsapp } from "react-icons/fa6";
-// import { SiUnstop } from "react-icons/si";
 
 const contact = () => {
     return (
@@ -19,9 +18,6 @@ const contact = () => {
                             </a>
                             <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                                 <FaXTwitter />
-                            </a>
-                            <a href="https://unstop.com" target="_blank" rel="noopener noreferrer">
-                                {/* <SiUnstop /> */}
                             </a>
                             <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
                                 <FaDiscord />
