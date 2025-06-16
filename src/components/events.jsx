@@ -78,27 +78,27 @@ const events = () => {
                             </FadeRight>
                         </div>
                         <div className="circle top-3/5">
-<FadeLeft>
-                            <div className='shadow-lg shadow-red-500 box3'>
-                                <div className="flex gap-5">
-                                    <div>
-                                        <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">
-                                            <h3 className='text-lg'>9</h3>
-                                            <h4 className='text-sm'>Oct</h4>
+                            <FadeLeft>
+                                <div className='shadow-lg shadow-red-500 box3'>
+                                    <div className="flex gap-5">
+                                        <div>
+                                            <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">
+                                                <h3 className='text-lg'>9</h3>
+                                                <h4 className='text-sm'>Oct</h4>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="text-xl font-semibold"> Inaugural Session with Celebrity Guest</div>
+                                            <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
+                                            <ul className='mt-2 list-disc'>
+                                                <li>Guest: To be revealed soon!!</li>
+                                                <li>Special podcast-style session</li>
+                                                <li>Marks the official launch of the main Hackathon round</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div className="text-xl font-semibold"> Inaugural Session with Celebrity Guest</div>
-                                        <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
-                                        <ul className='mt-2 list-disc'>
-                                            <li>Guest: To be revealed soon!!</li>
-                                            <li>Special podcast-style session</li>
-                                            <li>Marks the official launch of the main Hackathon round</li>
-                                        </ul>
-                                    </div>
                                 </div>
-                            </div>
-</FadeLeft>
+                            </FadeLeft>
                         </div>
                         <div className="circle top-4/5">
                             <FadeRight>
@@ -124,25 +124,26 @@ const events = () => {
                             </FadeRight>
                         </div>
                         <div className="circle -bottom-1">
-                            
-                            <div className='shadow-lg shadow-red-500 box3'>
-                                <div className="flex gap-5">
-                                    <div>
-                                        <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">
-                                            <h3 className='text-lg'>12</h3>
-                                            <h4 className='text-sm'>Oct</h4>
+                            <FadeLeft>
+                                <div className='shadow-lg shadow-red-500 box3'>
+                                    <div className="flex gap-5">
+                                        <div>
+                                            <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">
+                                                <h3 className='text-lg'>12</h3>
+                                                <h4 className='text-sm'>Oct</h4>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="text-xl font-semibold">The Final Showdown</div>
+                                            <div className="text-gray-500 font-medium">@ Google India, Gurugram</div>
+                                            <ul className='mt-2 list-disc'>
+                                                <li>Top 10 teams from 0xGenIgnite</li>
+                                                <li>Open to students worldwide</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div className="text-xl font-semibold">The Final Showdown</div>
-                                        <div className="text-gray-500 font-medium">@ Google India, Gurugram</div>
-                                        <ul className='mt-2 list-disc'>
-                                            <li>Top 10 teams from 0xGenIgnite</li>
-                                            <li>Open to students worldwide</li>
-                                        </ul>
-                                    </div>
                                 </div>
-                            </div>
+                            </FadeLeft>
                         </div>
                     </div>
                 </div>

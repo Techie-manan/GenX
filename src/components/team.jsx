@@ -49,40 +49,63 @@ const team = () => {
                 <div className="centre flex-wrap w-full gap-5">
                     <FadeUp className="capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>Harshil Shrivastava</h2>
+                        <h2 className="font-semibold">Harshil Shrivastava</h2>
                         <h3>Lead</h3>
-                        <div className="centre">
-                            links
+                         <div className="centre gap-5 text-2xl">
+                            <div className="capsule p-2">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
                         </div>
                     </FadeUp>
 
                     <FadeUp delay={0.1} className="capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>Manan Aggarwal</h2>
+                        <h2 className="font-semibold">Manan Aggarwal</h2>
                         <h3>Tech Lead</h3>
-                        <div className="centre">
-                            links
+                        <div className="centre gap-5 text-2xl">
+                            <div className="capsule p-2">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
                         </div>
                     </FadeUp>
                     <FadeUp delay={0.3} className="capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>Aditya Pratap Sisodia</h2>
-                        <h3>Logistics</h3>
-                        <div className="centre">
-                            links
+                        <h2 className="font-semibold">Aditya Pratap Sisodia</h2>
+                        <h3>Logistic Head</h3>
+                         <div className="centre gap-5 text-2xl">
+                            <div className="capsule p-2">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
                         </div>
                     </FadeUp>
                     <FadeUp delay={0.5} className="capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>Bhavya Jain</h2>
-                        <h3>Graphics</h3>
+                        <h2 className="font-semibold">Bhavya Jain</h2>
+                        <h3>Graphic Designer</h3>
                         <div className="centre gap-5 text-2xl">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                <FaInstagram />
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                <FaLinkedin />
-                            </a>
+                            <div className="capsule p-2">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
                         </div>
                     </FadeUp>
                 </div>

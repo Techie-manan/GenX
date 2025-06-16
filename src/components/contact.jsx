@@ -7,24 +7,29 @@ const contact = () => {
             <div className="relative">
                 <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'>
                     <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
-                    <div className="flex items-center justify-around">
+                    <div className="flex items-center justify-around my-5">
                         <div className='text-xl font-semibold'>HackMela 1.0</div>
-                        <div className="centre gap-5 text-2xl">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                <FaInstagram />
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin />
-                            </a>
-                            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-                                <FaXTwitter />
-                            </a>
-                            <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
-                                <FaDiscord />
-                            </a>
-                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-                                <FaWhatsapp />
-                            </a>
+                        <div className="centre gap-3 text-2xl">
+                            <div className="capsule p-2">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
+                                    <FaXTwitter />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500 transition-colors">
+                                    <FaDiscord />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
+                                    <FaWhatsapp />
+                                </a></div>
                         </div>
                     </div>
                     <h3 className='text-center text-sm font-semibold p-1'>2025 HackMela1.0  All rights reserved</h3>

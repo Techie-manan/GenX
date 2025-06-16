@@ -92,7 +92,8 @@
 @media (min-width: 992px) {
 
     .box3 {
-        margin-left: -2650%;
+        /* margin-left: -2650%; */
+        left: -540px;
         border-top-left-radius: 20px;
         border-top-right-radius: 0px;
         width: 500px;
