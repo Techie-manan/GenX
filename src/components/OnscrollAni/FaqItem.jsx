@@ -25,7 +25,7 @@ const FaqItem = ({ question, answer }) => {
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: contentRef.current?.scrollHeight || 'auto', opacity: 1 }}
+            animate={{ height: 400, opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4 }}
             className='overflow-hidden'

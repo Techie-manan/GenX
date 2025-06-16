@@ -1,29 +1,48 @@
 import React from 'react'
+import { FaInstagram, FaLinkedin, FaXTwitter, FaDiscord, FaWhatsapp } from "react-icons/fa6";
+// import { SiUnstop } from "react-icons/si";
 
 const contact = () => {
     return (
         <>
-        <div className="relative">
-            <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'>
-                <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
-                <div className="flex justify-around">
-                    <div>HackMela 1.0</div>
-                    <div className="centre">
-                        <a href=""></a>
+            <div className="relative">
+                <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'>
+                    <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
+                    <div className="flex items-center justify-around">
+                        <div className='text-xl font-semibold'>HackMela 1.0</div>
+                        <div className="centre gap-5 text-2xl">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram />
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin />
+                            </a>
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                                <FaXTwitter />
+                            </a>
+                            <a href="https://unstop.com" target="_blank" rel="noopener noreferrer">
+                                {/* <SiUnstop /> */}
+                            </a>
+                            <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                                <FaDiscord />
+                            </a>
+                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                                <FaWhatsapp />
+                            </a>
+                        </div>
                     </div>
+                    <h3 className='text-center text-sm font-semibold p-1'>2025 HackMela1.0  All rights reserved</h3>
+                    <h3 className='text-sm font-semibold p-2 flex justify-self-center gap-2'>
+                        <a href="">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="">Terms of Service</a>
+                        <span>|</span>
+                        <a href="">Contact Us</a>
+                    </h3>
                 </div>
-                <h3 className='text-center text-sm font-semibold p-1'>2025 HackMela1.0  All rights reserved</h3>
-                <h3 className='text-sm font-semibold p-2 flex justify-self-center gap-2'>
-                    <a href="">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="">Terms of Service</a>
-                    <span>|</span>
-                    <a href="">Contact Us</a>
-                </h3>
-            </div>
-            <div className="absolute -top-full left-0 w-full h-full -z-10">
-                <img src="download.jpeg" alt="" />
-            </div>
+                <div className="absolute -top-full left-0 w-full h-full -z-10">
+                    <img src="download.jpeg" alt="" />
+                </div>
             </div>
         </>
     )

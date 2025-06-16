@@ -3,7 +3,7 @@ import React from 'react'
 const home = () => {
     return (
         <>
-            <div className="absolute left-1/4 top-1/4 z-10  ">
+            <div className="absolute w-full h-full z-10 centre ">
                 <div className="centre flex-col text-center text-white gap-8">
                     <div className="centre flex-col text-center text-white gap-2">
                     <h3 className='xl font-bold '>Hack with us at</h3>
