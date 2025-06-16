@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +26,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScroll('home')}>
           {/* <img src="" alt="logo" className="h-8" /> */}
-          <h1 className="text-xl font-bold">HackMela</h1>
+          <h1 className="text-xl font-bold">HackComet</h1>
         </div>
 
         {/* Desktop Menu */}

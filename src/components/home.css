@@ -74,7 +74,7 @@
     border-top-right-radius: 20px;
     padding: 12px;
     position: absolute;
-    margin-left: 155%;
+    left: 10px;
     width: 80vw;
 }
 
@@ -85,19 +85,19 @@
     border-top-right-radius: 20px;
     padding: 12px;
     position: absolute;
-    margin-left: 155%;
+    left: 10px;
     width: 80vw;
 }
 
 @media (min-width: 992px) {
 
     .box3 {
-        /* margin-left: -2650%; */
         left: -540px;
         border-top-left-radius: 20px;
         border-top-right-radius: 0px;
         width: 500px;
     }
+    
     .box2 {
         width: 500px;
     }

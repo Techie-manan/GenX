@@ -11,9 +11,9 @@ const about = () => {
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
                 <div className='centre flex-col gap-15 px-[5vw]'>
                     <FadeUp>
-                        <div className='text-center justify-self-center p-8 pb-20 md:w-1/3 rounded-2xl shadow-lg shadow-gray-500 '>
-                            <h1 className='text-3xl font-semibold pb-5 text'>HackMela'25</h1>
-                            <p> HackMela is not just another hackathon; it's a month-long
+                        <div className='text-center justify-self-center p-2 md:p-8 pb-20 md:w-1/3 rounded-2xl shadow-lg shadow-gray-500 '>
+                            <h1 className='text-3xl font-semibold pb-5 text'>HackComet'25</h1>
+                            <p> HackComet is not just another hackathon; it's a month-long
                                 festival of innovation, culminating in a spectacular 3-day
                                 grand event. We are bringing together the brightest, most
                                 ambitious tech talent from across the region for an
@@ -35,7 +35,7 @@ const about = () => {
                     </FadeUp>
                     <div className="flex items-center flex-col md:flex-row md:justify-around gap-5">
                         <FadeLeft>
-                            <div className='text-center p-5 pb-20 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-fuchsia-500'>
+                            <div className='text-center w-full p-2 md:p-5 pb-20 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-fuchsia-500'>
                                 <h2 className='text-3xl font-semibold pb-5 textp'>Genesis</h2>
                                 <p> We are a student-led Web3 Club committed to
                                     exploring and advancing the future of decentralized
@@ -53,7 +53,7 @@ const about = () => {
                             </div>
                         </FadeLeft>
                         <FadeRight>
-                            <div className='text-center p-5 pb-20 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-red-500'>
+                            <div className='text-center w-full p-2 md:p-5 pb-20 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-red-500'>
                                 <h2 className='text-3xl font-semibold pb-5 textr'>CodeX</h2>
                                 <p> We are a student-led Web3 Club committed to
                                     exploring and advancing the future of decentralized
@@ -76,7 +76,8 @@ const about = () => {
                 <div className="centre flex-col md:flex-row gap-5 md:justify-around text-center px-[5vw]">
                     <FadeUp>
                         <div className="card capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('./images/web3.jpeg')] bg-cover bg-center h-[35vh]">
-                        </div></FadeUp>
+                        </div>
+                        </FadeUp>
                     <FadeUp delay={0.2}>
                         <div className="card centre capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('./images/fusion.png')] bg-cover bg-center  h-[35vh] flex items-center justify-center">
                             <h2 className='p-5 text-xl font-semibold text-white text-center'>

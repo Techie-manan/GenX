@@ -7,8 +7,8 @@ const contact = () => {
             <div className="relative">
                 <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'>
                     <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
-                    <div className="flex items-center justify-around my-5">
-                        <div className='text-xl font-semibold'>HackMela 1.0</div>
+                    <div className="flex items-center flex-col md:flex-row justify-around my-5 gap-3">
+                        <div className='text-xl font-semibold'>HackComet 1.0</div>
                         <div className="centre gap-3 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
