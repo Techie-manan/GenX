@@ -13,7 +13,7 @@ import Events from "./components/events";
 function App() {
   return (
     <>
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden z-0">
         <Navbar />
         <div id='home' className="relative w-[100vw] h-[100vh] bg-black overflow-hidden -z-10">
           <HeroScene />

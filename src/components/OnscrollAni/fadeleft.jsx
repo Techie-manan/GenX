@@ -10,7 +10,7 @@ export default function FadeLeft({ children, delay = 0 }) {
     if (inView) {
       controls.start({
         opacity: 1,
-        x: 20,
+        x: 0,
         transition: { duration: 0.8, delay }
       });
     }

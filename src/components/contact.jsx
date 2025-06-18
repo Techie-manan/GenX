@@ -11,15 +11,15 @@ const contact = () => {
                         <div className='text-xl font-semibold'>HackComet 1.0</div>
                         <div className="centre gap-3 text-2xl">
                             <div className="capsule p-2">
-                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                <a href="https://www.instagram.com/hackcomet1.0/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
                                     <FaInstagram />
                                 </a></div>
                             <div className="capsule p-2">
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                <a href="https://www.linkedin.com/company/107632958/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
                                     <FaLinkedin />
                                 </a></div>
                             <div className="capsule p-2">
-                                <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
+                                <a href="https://x.com/0xhackmela1" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
                                     <FaXTwitter />
                                 </a></div>
                             <div className="capsule p-2">
