@@ -75,18 +75,18 @@ const about = () => {
                 <h1 className='text-center text-5xl font-bold p-5 mt-10'>Themes</h1>
                 <div className="centre flex-col md:flex-row gap-5 md:justify-around text-center px-[5vw]">
                     <FadeUp>
-                        <div className="card capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('./images/web3.jpeg')] bg-cover bg-center h-[35vh]">
+                        <div className="card capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('/images/web3.jpeg')] bg-cover bg-center h-[35vh]">
                         </div>
                         </FadeUp>
                     <FadeUp delay={0.2}>
-                        <div className="card centre capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('./images/fusion.png')] bg-cover bg-center  h-[35vh] flex items-center justify-center">
+                        <div className="card centre capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('/images/fusion.png')] bg-cover bg-center  h-[35vh] flex items-center justify-center">
                             <h2 className='p-5 text-xl font-semibold text-white text-center'>
                                 AI x Web3 <br /> Fusion
                             </h2>
                         </div>
                     </FadeUp>
                     <FadeUp delay={0.4}>
-                        <div className="card centre capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('./images/ai.png')] bg-cover bg-center h-[35vh] flex justify-center items-center">
+                        <div className="card centre capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('/images/ai.png')] bg-cover bg-center h-[35vh] flex justify-center items-center">
                             <h2 className='p-2 text-2xl font-semibold text-center'>AI</h2>
                         </div>
                     </FadeUp>
