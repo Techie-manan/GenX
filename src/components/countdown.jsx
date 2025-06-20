@@ -37,7 +37,7 @@ function TimeBox({ label, value }) {
     return (
         <>
             
-                <div className="backdrop-blur-md aspect-square p-1 h-17 rounded-2xl border border-[rgba(95,95,113,0.22)] shadow-[inset_0_0_16px_rgba(255,255,255,0.08)]">
+                <div className="backdrop-blur-md aspect-square p-1 h-10 md:h-17 rounded-2xl border border-[rgba(95,95,113,0.22)] shadow-[inset_0_0_16px_rgba(255,255,255,0.08)]">
                     <div className="text-xl font-semibold text-white">{value.toString().padStart(2, '0')}</div>
                     <div className="text-sm text-gray-300 mt-1 uppercase tracking-widest">{label}</div>
                 </div>
@@ -45,5 +45,6 @@ function TimeBox({ label, value }) {
         </>
     );
 }
+
 
 export default Countdown;

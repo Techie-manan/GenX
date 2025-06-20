@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
-import { Starfield } from "./starfield.jsx";
+import { Starfield } from "./Starfield.jsx";
 
 
 export default function HeroScene() {
