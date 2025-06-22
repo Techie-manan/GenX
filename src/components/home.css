@@ -85,14 +85,14 @@
     border-top-right-radius: 20px;
     padding: 12px;
     position: absolute;
-    left: 30px;
+    /* left: 30px; */
     width: 85vw;
 }
 
 @media (min-width: 992px) {
 
     .box3 {
-        left: -510px;
+        /* left: -510px; */
         border-top-left-radius: 20px;
         border-top-right-radius: 0px;
         width: 500px;
