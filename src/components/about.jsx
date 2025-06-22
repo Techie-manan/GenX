@@ -13,61 +13,21 @@ const about = () => {
                     <FadeUp>
                         <div className='text-center sm:w-2/3 justify-self-center p-2 md:p-8 pb-20 lg:w-1/2 rounded-2xl shadow-lg shadow-gray-500 '>
                             <h1 className='text-3xl font-semibold pb-5 text'>HackComet'25</h1>
-                            <p> HackComet is not just another hackathon; it's a month-long
-                                festival of innovation, culminating in a spectacular 3-day
-                                grand event. We are bringing together the brightest, most
-                                ambitious tech talent from across the region for an
-                                unparalleled journey of coding, creativity, and problem
-                                solving.
-                                Our unique month-long format provides extended visibility
-                                and deeper engagement opportunities that traditional
-                                hackathons cannot match.
-                                The Grand Finale: At the Heart of Innovation
-                                The pinnacle of HackMela is the 3-day Hackathon Finals,
-                                where the top teams will battle it out at the Google Office. This
-                                premier venue adds immense value and prestige, drawing
-                                significant attention and ensuring a high-quality experience
-                                for all involved.
-                                Join us in empowering the next wave of technological
-                                breakthroughs. Partner with HackMela and invest in the
-                                future of innovation.</p>
+                            <p> HackComet 1.0 is not just a hackathon-it’s a full-blown tech carnival by CodeX x Genesis, bringing together the brightest student innovators and code wizards from around the world. Kicking off at SRMIST Delhi-NCR and heading toward a grand finale at the iconic Google Office, Gurugram, the action runs from 12th September to 12th October 2025. From power-packed workshops and electrifying expert talks to an adrenaline-fueled 24-hour on-site hackathon, it’s all about turning bold ideas into breakthrough solutions. With top-tier mentorship and global limelight up for grabs, HackComet 1.0 is where tech meets thrill and innovation gets the spotlight it deserves!
+</p>
                         </div>
                     </FadeUp>
                     <div className="flex items-center flex-col md:flex-row md:justify-around gap-5">
                         <FadeLeft>
                             <div className='text-center w-full p-2 md:p-5 pb-20 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-fuchsia-500'>
                                 <h2 className='text-3xl font-semibold pb-5 textp'>Genesis</h2>
-                                <p> We are a student-led Web3 Club committed to
-                                    exploring and advancing the future of decentralized
-                                    technologies. Our focus lies in blockchain, AI, ML, and
-                                    emerging Web3 innovations. With a global outlook
-                                    and a rapidly growing community of developers,
-                                    entrepreneurs, and tech enthusiasts, we aim to
-                                    bridge the gap between academia and industry
-                                    through hands-on projects, hackathons, workshops,
-                                    and collaborations.
-                                    Driven by curiosity and a passion for innovation, we
-                                    provide a platform for learning, building, and
-                                    connecting — shaping the next generation of tech
-                                    leaders.</p>
+                                <p>We are a purpose-driven Web3 community shaping the decentralized future through collaboration and innovation. By organizing hackathons, speaker sessions, workshops, and more, we create opportunities for creators, coders, and innovators to learn, grow, and build impactful projects that align with the principles of decentralization, transparency, and community empowerment.</p>
                             </div>
                         </FadeLeft>
                         <FadeRight>
                             <div className='text-center w-full p-2 md:p-5 pb-20 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-red-500'>
                                 <h2 className='text-3xl font-semibold pb-5 textr'>CodeX</h2>
-                                <p> We are a student-led Web3 Club committed to
-                                    exploring and advancing the future of decentralized
-                                    technologies. Our focus lies in blockchain, AI, ML, and
-                                    emerging Web3 innovations. With a global outlook
-                                    and a rapidly growing community of developers,
-                                    entrepreneurs, and tech enthusiasts, we aim to
-                                    bridge the gap between academia and industry
-                                    through hands-on projects, hackathons, workshops,
-                                    and collaborations.
-                                    Driven by curiosity and a passion for innovation, we
-                                    provide a platform for learning, building, and
-                                    connecting — shaping the next generation of tech
-                                    leaders.</p>
+                                <p> CodeX is a dynamic tech community for coders, creators, and future founders. We offer real-world projects, expert sessions, weekly challenges, and mentorship across all CSE domains. Whether you're starting out or scaling up, CodeX fuels your ambition with purpose, learning, and innovation. Dream big—build bigger with CodeX.</p>
                             </div>
                         </FadeRight>
                     </div>
@@ -75,7 +35,7 @@ const about = () => {
                 <h1 className='text-center text-5xl font-bold p-5 mt-10'>Themes</h1>
                 <div className="centre flex-col md:flex-row gap-5 md:justify-around text-center px-[5vw]">
                     <FadeUp>
-                        <div className="card capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('/images/web3.jpeg')] bg-cover bg-center h-[35vh]">
+                        <div className="card capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('/images/web3.png')] bg-cover bg-center h-[35vh]">
                         </div>
                         </FadeUp>
                     <FadeUp delay={0.2}>
@@ -87,7 +47,7 @@ const about = () => {
                     </FadeUp>
                     <FadeUp delay={0.4}>
                         <div className="card centre capsule w-[80vw] md:w-[27vw] md:flex-1/4 bg-[url('/images/ai.png')] bg-cover bg-center h-[35vh] flex justify-center items-center">
-                            <h2 className='p-2 text-2xl font-semibold text-center'>AI</h2>
+                            <h2 className='py-1 px-2 text-2xl font-semibold text-center backdrop-blur-xs rounded-full'>AI</h2>
                         </div>
                     </FadeUp>
                 </div>
