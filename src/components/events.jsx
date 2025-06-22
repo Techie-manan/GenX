@@ -33,7 +33,7 @@ const events = () => {
                         </div>
                         <div className="circle top-1/5">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 md:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
                                     <div className="flex gap-5">
                                         <div>
                                             <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">
@@ -79,7 +79,7 @@ const events = () => {
                         </div>
                         <div className="circle top-3/5">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 md:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
                                     <div className="flex gap-5">
                                         <div>
                                             <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">
@@ -125,7 +125,7 @@ const events = () => {
                         </div>
                         <div className="circle -bottom-1">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 md:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
                                     <div className="flex gap-5">
                                         <div>
                                             <div className="p-1.5 rounded-full capsule centre flex-col font-medium h-14 aspect-square">

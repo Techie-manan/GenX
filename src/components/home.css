@@ -89,7 +89,7 @@
     width: 85vw;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 
     .box3 {
         /* left: -510px; */

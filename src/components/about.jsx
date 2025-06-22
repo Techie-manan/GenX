@@ -11,7 +11,7 @@ const about = () => {
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
                 <div className='centre flex-col gap-15 px-[5vw]'>
                     <FadeUp>
-                        <div className='text-center justify-self-center p-2 md:p-8 pb-20 md:w-1/3 rounded-2xl shadow-lg shadow-gray-500 '>
+                        <div className='text-center sm:w-2/3 justify-self-center p-2 md:p-8 pb-20 lg:w-1/2 rounded-2xl shadow-lg shadow-gray-500 '>
                             <h1 className='text-3xl font-semibold pb-5 text'>HackComet'25</h1>
                             <p> HackComet is not just another hackathon; it's a month-long
                                 festival of innovation, culminating in a spectacular 3-day
