@@ -6,15 +6,14 @@ import FadeUp from './OnscrollAni/fadeup'
 const about = () => {
     return (
         <>
-            <div id='about' className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
-            <div className='z-10 text-white bg'>
+            <div  className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
+            <div className='z-10 text-white bg' id='about'>
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
                 <div className='centre flex-col gap-15 px-[5vw]'>
                     <FadeUp>
                         <div className='text-center sm:w-2/3 justify-self-center p-2 md:p-8 pb-20 lg:w-1/2 rounded-2xl shadow-lg shadow-gray-500 '>
                             <h1 className='text-3xl font-semibold pb-5 text'>HackComet'25</h1>
-                            <p> HackComet 1.0 is not just a hackathon-it’s a full-blown tech carnival by CodeX x Genesis, bringing together the brightest student innovators and code wizards from around the world. Kicking off at SRMIST Delhi-NCR and heading toward a grand finale at the iconic Google Office, Gurugram, the action runs from 12th September to 12th October 2025. From power-packed workshops and electrifying expert talks to an adrenaline-fueled 24-hour on-site hackathon, it’s all about turning bold ideas into breakthrough solutions. With top-tier mentorship and global limelight up for grabs, HackComet 1.0 is where tech meets thrill and innovation gets the spotlight it deserves!
-</p>
+                            <p> HackComet 1.0 is not just a hackathon-it’s a full-blown tech carnival by CodeX x Genesis, bringing together the brightest student innovators and code wizards from around the world. Kicking off at SRMIST Delhi-NCR and heading toward a grand finale at the iconic Google Office, Gurugram, the action runs from 12th September to 12th October 2025. From power-packed workshops and electrifying expert talks to an adrenaline-fueled 24-hour on-site hackathon, it’s all about turning bold ideas into breakthrough solutions. With top-tier mentorship and global limelight up for grabs, HackComet 1.0 is where tech meets thrill and innovation gets the spotlight it deserves!</p>
                         </div>
                     </FadeUp>
                     <div className="flex items-center flex-col md:flex-row md:justify-around gap-5">

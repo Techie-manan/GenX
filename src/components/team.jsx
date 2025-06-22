@@ -84,7 +84,7 @@ const team = () => {
                         <h3>Logistic Head</h3>
                          <div className="centre gap-5 text-2xl">
                             <div className="capsule p-2">
-                                <a href="https://www.instagram.com/adiittyyaa?igsh=MW8xdmRjMGhheHUyag==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                <a href="https://www.instagram.com/_adiittyyaa_?igsh=MW8xdmRjMGhheHUyag==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
                                     <FaInstagram />
                                 </a></div>
                             <div className="capsule p-2">
@@ -108,7 +108,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                     <FadeUp delay={0.4} className="capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                     <FadeUp delay={0.3} className="capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/saanvi.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Saanvi Jindal</h2>
                         <h3>Operations Head</h3>
