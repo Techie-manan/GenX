@@ -13,9 +13,9 @@ import Events from "./components/events";
 function App() {
   return (
     <>
-      <div className="w-full overflow-hidden -z-30">
+      <div className="w-full overflow-hidden">
         <Navbar />
-        <div id='home' className="relative w-[100vw] h-[100vh] bg-black overflow-hidden -z-10">
+        <div id='home' className="relative w-[100vw] h-[100vh] bg-black overflow-hidden">
           <HeroScene />
           {/* <CenterBlob /> */}
           <Home />
