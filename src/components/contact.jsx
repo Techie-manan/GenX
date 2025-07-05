@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.css'
 import { FaInstagram, FaLinkedin, FaXTwitter, FaDiscord, FaWhatsapp } from "react-icons/fa6";
 
 const contact = () => {
@@ -13,7 +14,7 @@ const contact = () => {
                         <div className='text-xl font-semibold'>0xGenIgnite</div></div>
                         <div className="centre gap-3 text-2xl">
                             <div className="capsule p-2">
-                                <a href="https://www.instagram.com/hackcomet1.0/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                <a href="https://www.instagram.com/0xgenignite/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
                                     <FaInstagram />
                                 </a></div>
                             <div className="capsule p-2">
@@ -21,7 +22,7 @@ const contact = () => {
                                     <FaLinkedin />
                                 </a></div>
                             <div className="capsule p-2">
-                                <a href="https://x.com/0xhackmela1" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
+                                <a href="https://x.com/0xgenignite" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
                                     <FaXTwitter />
                                 </a></div>
                             <div className="capsule p-2">
@@ -34,7 +35,7 @@ const contact = () => {
                                 </a></div>
                         </div>
                     </div>
-                    <h3 className='text-center text-sm font-semibold p-1'>2025 HackMela1.0  All rights reserved</h3>
+                    <h3 className='text-center text-sm font-semibold p-1'>2025 0xGenIgnite  All rights reserved</h3>
                     <h3 className='text-sm font-semibold p-2 flex justify-self-center gap-2'>
                         <a href="">Privacy Policy</a>
                         <span>|</span>
