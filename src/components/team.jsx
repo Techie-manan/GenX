@@ -47,26 +47,11 @@ const team = () => {
 
                 <h1 className='text-center text-5xl font-bold p-5 '>Our Team</h1>
                 <div className="centre flex-wrap w-full gap-5">
-                    <FadeUp className="capsule p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Harshil Shrivastava</h2>
-                        <h3>Lead</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/oof_harshil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-
-                    <FadeUp delay={0.1} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    
+                                        <FadeUp delay={0.1} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/manan.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Manan Aggarwal</h2>
-                        <h3>Tech Lead</h3>
+                        <h3>Tech Guy</h3>
                         <div className="centre gap-5 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/m.ana._n/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
@@ -150,6 +135,22 @@ const team = () => {
                                 </a></div>
                             <div className="capsule p-2">
                                 <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
+                        </div>
+                    </FadeUp>
+
+                    <FadeUp className="capsule p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
+                        <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
+                        <h2 className="font-semibold">Sonali Samal</h2>
+                        <h3>Lead</h3>
+                        <div className="centre gap-5 text-2xl">
+                            <div className="capsule p-2">
+                                <a href="https://www.instagram.com/oof_harshil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
                                     <FaLinkedin />
                                 </a></div>
                         </div>

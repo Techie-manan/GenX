@@ -23,9 +23,9 @@ const home = () => {
             <div className="absolute w-full h-full z-10 centre pointer-events-auto">
                 <div className="centre flex-col text-center text-white gap-8 pointer-events-auto">
                     <div className="centre flex-col text-center text-white gap-2">
-                        <h3 className='text-sm md:text-xl font-bold '>Hack with us at</h3>
-                        <h1 className='text-5xl md:text-8xl font-bold puw font-vamos'>HackComet 1.0</h1>
-                        <h3 className='text-sm md:text-xl font-bold'>12 September - 12 October 2025</h3>
+                        <h3 className='text-sm md:text-xl font-bold '>Ignite yourself with us at</h3>
+                        <h1 className='text-5xl md:text-8xl font-bold puw font-vamos pb-4'>0xGenIgnite 1.0</h1>
+                        <h3 className='text-sm md:text-xl font-bold'>9 October - 12 October 2025</h3>
                     </div>
                     <div className="centre gap-8 z-50 pointer-events-auto">
                         <button 
