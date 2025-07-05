@@ -5,9 +5,9 @@ import FaqItem from './OnscrollAni/FaqItem.jsx';
 const Faq = () => {
   const faqList = [
     {
-      question: 'What is HackMela 1.0?',
+      question: 'What is 0xGenIgnite?',
       answer:
-        "HackMela is not just another hackathon; it's a month-long festival of innovation, culminating in a spectacular 3-day grand event. We are bringing together the brightest, most ambitious tech talent from across the region for an unparalleled journey of coding, creativity, and problem solving."
+        "0xGenIgnite is not just another hackathon; it's a tech festival of innovation, culminating in a spectacular grand conclusion. We are bringing together the brightest, most ambitious tech talent from across the region for an unparalleled journey of coding, creativity, and problem solving."
     },
     {
       question: 'Who can attend the hackathon?',

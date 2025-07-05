@@ -10,7 +10,7 @@ const contact = () => {
                     <div className="flex items-center flex-col md:flex-row justify-around my-5 gap-3">
                         <div className="centre gap-2">
                             <img src="logo.PNG" alt="" className='h-7 rounded-full'/>
-                        <div className='text-xl font-semibold'>HackComet 1.0</div></div>
+                        <div className='text-xl font-semibold'>0xGenIgnite</div></div>
                         <div className="centre gap-3 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/hackcomet1.0/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
