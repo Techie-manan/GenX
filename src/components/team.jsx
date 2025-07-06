@@ -63,6 +63,21 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
+                     <FadeUp delay={0.3} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                        <img src="./images/bhavya.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
+                        <h2 className="font-semibold">Bhavya Jain</h2>
+                        <h3>Graphic Head</h3>
+                        <div className="centre gap-5 text-2xl">
+                            <div className="capsule p-2">
+                                <a href="https://www.instagram.com/based.bhavya?igsh=MXRua201Z2k4OWZtZA==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                    <FaInstagram />
+                                </a></div>
+                            <div className="capsule p-2">
+                                <a href="https://www.linkedin.com/in/bhavya-jain-28a89a311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                    <FaLinkedin />
+                                </a></div>
+                        </div>
+                    </FadeUp>
                     <FadeUp delay={0.2} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/aditya.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold ">Aditya Pratap Sisodia</h2>
@@ -93,22 +108,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                    <FadeUp delay={0.3} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/bhavya.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Bhavya Jain</h2>
-                        <h3>Graphic Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/based.bhavya?igsh=MXRua201Z2k4OWZtZA==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/bhavya-jain-28a89a311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-                    
+                                       
                     <FadeUp delay={0.2} className="capsule text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Priyanshu</h2>
@@ -143,7 +143,7 @@ const team = () => {
                     <FadeUp className="capsule p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Sonali Samal</h2>
-                        <h3>Lead</h3>
+                        <h3>Finance Head</h3>
                         <div className="centre gap-5 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/oof_harshil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">

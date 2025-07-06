@@ -8,9 +8,9 @@ export default function HeroScene() {
     <>
       <Canvas className="pointer-events-none"
         camera={{ position: [0, 0, 5], fov: 75 }}
-        style={{ position: "absolute", top: 0, left: 0, zIndex: -10 }}
+        style={{ position: "absolute", top: 0, left: 0, zIndex: 1 }}
       >
-        <color attach="background" args={["#000000"]} />
+        <color attach="background" args={["#000000"]} /> 
         <ambientLight intensity={0.4} />
         <pointLight position={[10, 10, 10]} />
 
