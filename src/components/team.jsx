@@ -63,7 +63,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                     <FadeUp delay={0.3} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                     <FadeUp delay={0.2} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/bhavya.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Bhavya Jain</h2>
                         <h3>Graphic Head</h3>
@@ -78,7 +78,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                    <FadeUp delay={0.2} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.3} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/aditya.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold ">Aditya Pratap Sisodia</h2>
                         <h3>Logistic Head</h3>
@@ -93,7 +93,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                    <FadeUp delay={0.1} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.4} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/saanvi.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Saanvi Jindal</h2>
                         <h3>Operations Head</h3>
@@ -109,7 +109,7 @@ const team = () => {
                         </div>
                     </FadeUp>
                                        
-                    <FadeUp delay={0.2} className="capsule text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.1} className="capsule text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Priyanshu</h2>
                         <h3>Media Lead</h3>
@@ -124,7 +124,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                    <FadeUp delay={0.3} className="capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.2} className="capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Prisha Rawat</h2>
                         <h3>PR & Sponserships</h3>
@@ -140,7 +140,7 @@ const team = () => {
                         </div>
                     </FadeUp>
 
-                    <FadeUp className="capsule p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.3} className="capsule p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Sonali Samal</h2>
                         <h3>Finance Head</h3>

@@ -17,20 +17,15 @@ const about = () => {
                             </p>
                         </div>
                     </FadeUp>
-                    <div className="flex items-center flex-col md:flex-row md:justify-around gap-5">
-                        <FadeLeft>
-                            <div className='text-center w-full p-2 md:p-5 pb-10 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-fuchsia-500'>
-                                <h2 className='text-3xl font-semibold pb-5 textp'>Genesis</h2>
-                                <p>We’re a Web3 community driving decentralization through hackathons, workshops, and events—empowering creators and coders to build transparent, impactful, and community-focused innovations.</p>
-                            </div>
-                        </FadeLeft>
-                        <FadeRight>
-                            <div className='text-center w-full p-2 md:p-5 pb-10 md:w-2/3 justify-self-center rounded-2xl shadow-lg shadow-red-500'>
+                    {/* <div className="flex items-center flex-col md:flex-row md:justify-around gap-5"> */}
+                       
+                        <FadeUp>
+                            <div className='text-center sm:w-2/3 p-2 md:p-5 pb-10 lg:w-1/2 justify-self-center rounded-2xl shadow-lg shadow-red-500'>
                                 <h2 className='text-3xl font-semibold pb-5 textr'>CodeX</h2>
                                 <p> CodeX empowers coders, creators, and future founders with real-world projects, expert sessions, challenges, and mentorship—fueling ambition, learning, and innovation across all CSE domains.</p>
                             </div>
-                        </FadeRight>
-                    </div>
+                        </FadeUp>
+                    {/* </div> */}
                 </div>
                 <h1 className='text-center text-5xl font-bold p-5 mt-10'>Themes</h1>
                 <div className="centre flex-col md:flex-row gap-5 md:justify-around text-center px-[5vw]">

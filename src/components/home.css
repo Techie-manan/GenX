@@ -83,6 +83,7 @@
     left: 20px;
     width: 85vw;
      backdrop-filter: blur(10px);
+     text-align: left;
 }
 
 .box3 {
@@ -95,6 +96,7 @@
     /* left: 30px; */
     width: 85vw;
     backdrop-filter: blur(5px);
+    text-align: left;
 }
 
 @media (min-width: 1024px) {
@@ -104,6 +106,7 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 0px;
         width: 500px;
+        text-align: right;
     }
 
     .box2 {
