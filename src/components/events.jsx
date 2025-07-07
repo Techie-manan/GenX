@@ -14,12 +14,10 @@ const events = () => {
                             <FadeRight>
                                 <div className='shadow-lg shadow-fuchsia-500 box2'>
                                     <div>
-                                        <div className="text-xl font-semibold">Inaugral Webinar: The Future of Web3</div>
-                                        <div className="text-gray-500 font-medium">Online</div>
-                                        <ul className='mt-2 list-none'>
-                                            <li>Speaker session by Graduates from Harvard University</li>
-                                            <li>Open to students worldwide</li>
-                                        </ul>
+                                        <div className="text-xl font-semibold">Launchpad Check-In</div>
+                                        <div className="text-gray-500 font-medium">09:00 AM</div>
+                                        <p className='mt-2 list-none'>Arrival, registration, swags & breakfast. Get your crew ready.
+                                        </p>
                                     </div>
                                 </div>
                             </FadeRight>
@@ -29,13 +27,10 @@ const events = () => {
                                 <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
 
                                     <div>
-                                        <div className="text-xl font-semibold">Capture the Flag(CTF) Challenge</div>
-                                        <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
-                                        <ul className='mt-2 list-none'>
-                                            <li>Web3-based real-time problem-solving event</li>
-                                            <li>Exclusively for SRM students</li>
-                                            <li> Winning team gains direct entry to the main hackathon</li>
-                                        </ul>
+                                        <div className="text-xl font-semibold">Mission Briefing</div>
+                                        <div className="text-gray-500 font-medium">10:00 AM</div>
+                                         <p className='mt-2 list-none'>Opening ceremony, rules, theme briefing & partner showcase.
+                                        </p>
                                     </div>
                                 </div>
                             </FadeLeft>
@@ -45,13 +40,10 @@ const events = () => {
                                 <div className='box2 shadow-lg shadow-fuchsia-500'>
 
                                     <div>
-                                        <div className="text-xl font-semibold">CodeX Mini Hackathon</div>
-                                        <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
-                                        <ul className='mt-2 list-none'>
-                                            <li> 8-hour coding challenge</li>
-                                            <li>Exclusively for SRM students</li>
-                                            <li> Winning team gains direct entry to the main hackathon</li>
-                                        </ul>
+                                        <div className="text-xl font-semibold">Ignition Start</div>
+                                        <div className="text-gray-500 font-medium">11:00 AM</div>
+                                        <p className='mt-2 list-none'>Hacking begins. Teams lock into their mission objectives.
+                                        </p>
                                     </div>
                                 </div>
                             </FadeRight>
@@ -61,13 +53,10 @@ const events = () => {
                                 <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
 
                                     <div>
-                                        <div className="text-xl font-semibold"> Inaugural Session with Celebrity Guest</div>
-                                        <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
-                                        <ul className='mt-2 list-none'>
-                                            <li>Guest: To be revealed soon!!</li>
-                                            <li>Special podcast-style session</li>
-                                            <li>Marks the official launch of the main Hackathon round</li>
-                                        </ul>
+                                        <div className="text-xl font-semibold"> Galactic Grub</div>
+                                        <div className="text-gray-500 font-medium">01:00 PM</div>
+                                         <p className='mt-2 list-none'>Lunch break – recharge your fuel cells.
+                                        </p>
                                     </div>
                                 </div>
                             </FadeLeft>
@@ -77,13 +66,10 @@ const events = () => {
                                 <div className='box2 shadow-lg shadow-fuchsia-500'>
 
                                     <div>
-                                        <div className="text-xl font-semibold">0xGenIgnite</div>
-                                        <div className="text-gray-500 font-medium">@SRMIST Modinagar</div>
-                                        <ul className='mt-2 list-none'>
-                                            <li>Participants:50 shortlisted teams</li>
-                                            <li>24-hour offline hackathon</li>
-                                            <li>Open to students worldwide</li>
-                                        </ul>
+                                        <div className="text-xl font-semibold">Spacewalk: Mentor Orbit #1</div>
+                                        <div className="text-gray-500 font-medium">02:00 PM</div>
+                                        <p className='mt-2 list-none'>Mentors float in for the first feedback & Q/A round.
+                                        </p>
                                     </div>
                                 </div>
                             </FadeRight>
@@ -93,12 +79,10 @@ const events = () => {
                                 <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
 
                                     <div>
-                                        <div className="text-xl font-semibold">The Final Showdown</div>
-                                        <div className="text-gray-500 font-medium">@ Google India, Gurugram</div>
-                                        <ul className='mt-2 list-none'>
-                                            <li>Top 10 teams from 0xGenIgnite</li>
-                                            <li>Open to students worldwide</li>
-                                        </ul>
+                                        <div className="text-xl font-semibold">Blackhole Break </div>
+                                        <div className="text-gray-500 font-medium">04:00 PM</div>
+                                        <p className='mt-2 list-none'>Quick energizer, coffee + networking zone.
+                                        </p>
                                     </div>
                                 </div>
                             </FadeLeft>
