@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScroll('home')}>
-          <img src="logo.PNG" alt="logo" className="h-8 rounded-full" />
+          <img src="logo.PNG" alt="logo" className="h-15 rounded-full" />
           <h1 className="text-xl font-bold">0xGenIgnite</h1>
         </div>
 

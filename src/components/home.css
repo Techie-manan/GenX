@@ -105,11 +105,11 @@
         /* left: -510px; */
         border-top-left-radius: 20px;
         border-top-right-radius: 0px;
-        width: 500px;
+        width: 400px;
         text-align: right;
     }
 
     .box2 {
-        width: 500px;
+        width: 400px;
     }
 }

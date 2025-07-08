@@ -24,7 +24,7 @@ const events = () => {
                         </div>
                         <div className="circle top-1/10">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
 
                                     <div>
                                         <div className="text-xl font-semibold">Mission Briefing</div>
@@ -50,7 +50,7 @@ const events = () => {
                         </div>
                         <div className="circle top-3/10">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
 
                                     <div>
                                         <div className="text-xl font-semibold"> Galactic Grub</div>
@@ -76,7 +76,7 @@ const events = () => {
                         </div>
                         <div className="circle top-5/10">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
 
                                     <div>
                                         <div className="text-xl font-semibold">Blackhole Break </div>
@@ -101,7 +101,7 @@ const events = () => {
                         </div>
                         <div className="circle top-7/10">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
 
                                     <div>
                                         <div className="text-xl font-semibold">AI & Web3 Nebula Talk</div>
@@ -127,7 +127,7 @@ const events = () => {
                         </div>
                         <div className="circle top-9/10">
                             <FadeLeft>
-                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-128'>
+                                <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
 
                                     <div>
                                         <div className="text-xl font-semibold">Mission Pulse Check</div>
