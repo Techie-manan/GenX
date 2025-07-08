@@ -15,8 +15,9 @@ const events = () => {
                 <div className='flex justify-center gap-4 my-4'>
                     <button
                         onClick={() => setActiveDay('day1')}
-                        className={`px-6 py-2 rounded-full font-semibold ${activeDay === 'day1'
-                                ? 'bg-fuchsia-600 text-white'
+                        className={`px-10 py-3 bg-gradient-to-l from-pink-500/40 to-purple-500/10  backdrop-blur-md text-white font-medium text-lg rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1
+                            ${activeDay === 'day1'
+                                ? ' text-white'
                                 : 'bg-gray-700 text-gray-300'
                             }`}
                     >
@@ -24,8 +25,9 @@ const events = () => {
                     </button>
                     <button
                         onClick={() => setActiveDay('day2')}
-                        className={`px-6 py-2 rounded-full font-semibold ${activeDay === 'day2'
-                                ? 'bg-fuchsia-600 text-white'
+                        className={`px-10 py-3 text-lg bg-gradient-to-r from-purple-500/10 to-pink-500/40 backdrop-blur-md text-white font-medium rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1
+                            ${activeDay === 'day2'
+                                ? ' text-white'
                                 : 'bg-gray-700 text-gray-300'
                             }`}
                     >

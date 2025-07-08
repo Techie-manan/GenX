@@ -25,11 +25,11 @@ const home = () => {
                     <div className="centre flex-col text-center text-white gap-2">
                         <h3 className='text-sm md:text-xl font-bold '>Ignite yourself with us at</h3>
                         <h1 className='text-5xl md:text-8xl font-bold puw font-vamos pb-4'>0xGenIgnite</h1>
-                        <h3 className='text-sm md:text-xl font-bold'>9 October - 12 October 2025</h3>
+                        <h3 className='text-sm md:text-xl font-bold'>10 October - 11 October 2025</h3>
                     </div>
                     <div className="centre gap-8 z-50 pointer-events-auto">
                         <button 
-                            onClick={() => handleScroll('events')} 
+                            onClick={() => handleScroll('events')}  
                             className='group relative px-10 py-4 bg-white/10 backdrop-blur-md text-white font-medium rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1'
                             style={{ zIndex: 1000 }}
                         >
