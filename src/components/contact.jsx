@@ -6,13 +6,13 @@ const contact = () => {
     return (
         <>
             <div className="relative h-fit">
-                <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]' 
-                style={{ backgroundImage: 'url("./download.jpeg")', backgroundRepeat: 'no-repeat' , backgroundPosition: 'center', backgroundSize: 'contain' }}>
+                <div id='contact' className='z-10 text-white bg pt-10 px-[5vw]'
+                    style={{ backgroundImage: 'url("./download.png")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain' }}>
                     <h1 className='text-center text-4xl font-bold p-5 '>Contact Us</h1>
                     <div className="flex items-center flex-col md:flex-row justify-around my-5 gap-3">
                         <div className="centre gap-2">
-                            <img src="logo.PNG" alt="" className='h-7 rounded-full'/>
-                        <div className='text-xl font-semibold'>0xGenIgnite</div></div>
+                            <img src="logo.PNG" alt="" className='h-7 rounded-full' />
+                            <div className='text-xl font-semibold'>0xGenIgnite</div></div>
                         <div className="centre gap-3 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/0xgenignite/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
@@ -27,17 +27,14 @@ const contact = () => {
                                     <FaXTwitter />
                                 </a></div>
                             <div className="capsule p-2">
-                                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500 transition-colors">
+                                <a href="https://discord.gg/TTmJExU3" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500 transition-colors">
                                     <FaDiscord />
                                 </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
-                                    <FaWhatsapp />
-                                </a></div>
+                            
                         </div>
                     </div>
                     <h3 className='text-center text-sm font-semibold p-1'>2025 0xGenIgnite  All rights reserved</h3>
-                    <h3 className='text-sm font-semibold p-2 flex justify-self-center gap-2'>
+                    <h3 className='text-sm font-semibold p-2 flex centre gap-2'>
                         <a href="">Privacy Policy</a>
                         <span>|</span>
                         <a href="">Terms of Service</a>
@@ -45,9 +42,7 @@ const contact = () => {
                         <a href="">Contact Us</a>
                     </h3>
                 </div>
-                <div className="absolute -top-full left-0 w-full h-full -z-10">
-                    <img src="download.jpeg" alt="" />
-                </div>
+                
             </div>
         </>
     )

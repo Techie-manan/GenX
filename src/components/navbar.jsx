@@ -33,7 +33,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-7 font-semibold">
           <li onClick={() => handleScroll('home')} className="cursor-pointer hover:text-fuchsia-400">Home</li>
           <li onClick={() => handleScroll('about')} className="cursor-pointer hover:text-fuchsia-400">About</li>
-          <li onClick={() => handleScroll('events')} className="cursor-pointer hover:text-fuchsia-400">Events</li>
+          <li onClick={() => handleScroll('events')} className="cursor-pointer hover:text-fuchsia-400">Timeline</li>
           <li onClick={() => handleScroll('team')} className="cursor-pointer hover:text-fuchsia-400">Team</li>
           <li onClick={() => handleScroll('sponsors')} className="cursor-pointer hover:text-fuchsia-400">Sponsors</li>
           <li onClick={() => handleScroll('faq')} className="cursor-pointer hover:text-fuchsia-400">FAQs</li>

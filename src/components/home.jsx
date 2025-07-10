@@ -33,7 +33,7 @@ const home = () => {
                             className='group relative px-10 py-4 bg-white/10 backdrop-blur-md text-white font-medium rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1'
                             style={{ zIndex: 1000 }}
                         >
-                            <span className="relative z-10 tracking-wide">Events</span>
+                            <span className="relative z-10 tracking-wide">Timeline</span>
                             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </button>
                         <button 

@@ -51,7 +51,7 @@ const team = () => {
                                         <FadeUp delay={0.1} className="capsule p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/manan.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Manan Aggarwal</h2>
-                        <h3>Tech Guy</h3>
+                        <h3>Tech Head</h3>
                         <div className="centre gap-5 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/m.ana._n/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
@@ -110,9 +110,9 @@ const team = () => {
                     </FadeUp>
                                        
                     <FadeUp delay={0.1} className="capsule text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/priyanshu.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
+                        <img src="./images/priyanshu.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Priyanshu Kaushik</h2>
-                        <h3>Media Lead</h3>
+                        <h3>Media Head</h3>
                         <div className="centre gap-5 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/priyanshu_me7/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
@@ -127,7 +127,7 @@ const team = () => {
                     <FadeUp delay={0.2} className="capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/prisha.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Prisha Rawat</h2>
-                        <h3>PR & Sponserships</h3>
+                        <h3>PR & Sponserships Head</h3>
                         <div className="centre gap-5 text-2xl">
                             <div className="capsule p-2">
                                 <a href="https://www.instagram.com/prisha_1.6?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">

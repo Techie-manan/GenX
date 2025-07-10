@@ -9,7 +9,7 @@ const about = () => {
             <div className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
             <div className='z-10 text-white bg' id='about'>
                 <h1 className='text-center text-5xl font-bold p-5 '>About Us</h1>
-                <div className='centre flex-col gap-15 px-[5vw]'>
+                <div className='centre flex justify-center flex-col gap-15 px-[5vw]'>
                     <FadeUp>
                         <div className='text-center sm:w-2/3 justify-self-center p-2 md:p-8 pb-20 lg:w-1/2 rounded-2xl shadow-lg shadow-gray-500 '>
                             <h1 className='text-3xl font-semibold pb-5 text'>0xGenIgnite</h1>

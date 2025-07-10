@@ -46,7 +46,7 @@ const events = () => {
                                         <div>
                                             <div className="text-xl font-semibold">Launchpad Check-In</div>
                                             <div className="text-gray-500 font-medium">09:00 AM</div>
-                                            <p className='mt-2 list-none'>Arrival, registration, swags & breakfast. Get your crew ready.
+                                            <p className='mt-2 list-none'>Arrival, registration & swags. Get your crew ready.
                                             </p>
                                         </div>
                                     </div>
