@@ -35,11 +35,11 @@ const contact = () => {
                     </div>
                     <h3 className='text-center text-sm font-semibold p-1'>2025 0xGenIgnite  All rights reserved</h3>
                     <h3 className='text-sm font-semibold p-2 flex centre gap-2'>
-                        <a href="">Privacy Policy</a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
                         <span>|</span>
-                        <a href="">Terms of Service</a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>Terms of Service</a>
                         <span>|</span>
-                        <a href="">Contact Us</a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>Contact Us</a>
                     </h3>
                 </div>
                 

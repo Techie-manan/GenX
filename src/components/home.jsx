@@ -30,7 +30,7 @@ const home = () => {
                     <div className="centre gap-8 z-50 pointer-events-auto">
                         <button 
                             onClick={() => handleScroll('events')}  
-                            className='group relative px-10 py-4 bg-white/10 backdrop-blur-md text-white font-medium rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1'
+                            className='group relative px-5 md:px-10 py-4 bg-white/10 backdrop-blur-md text-white font-medium rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1'
                             style={{ zIndex: 1000 }}
                         >
                             <span className="relative z-10 tracking-wide">Timeline</span>
@@ -38,7 +38,7 @@ const home = () => {
                         </button>
                         <button 
                             onClick={handleRegister}
-                            className='group relative px-10 py-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-md text-white font-medium rounded-2xl border border-purple-400/30 hover:border-purple-300/50 hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1'
+                            className='group relative px-5 md:px-10 py-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-md text-white font-medium rounded-2xl border border-purple-400/30 hover:border-purple-300/50 hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1'
                             style={{ zIndex: 1000 }}
                         >
                             <span className="relative z-10 tracking-wide">Register Now</span>
