@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import FadeUp from './OnscrollAni/fadeup'
 
 const Events = () => {
@@ -194,27 +194,38 @@ const Events = () => {
 
     const currentEvents = activeDay === 'day1' ? day1Events : day2Events;
 
-    // Particle effect component
-    const ParticleEffect = ({ color, isActive }) => (
-        <div className={`absolute inset-0 overflow-hidden rounded-2xl pointer-events-none ${isActive ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
-            {[...Array(20)].map((_, i) => (
-                <div
-                    key={i}
-                    className={`absolute w-1 h-1 bg-gradient-to-r ${color === 'purple' ? 'from-purple-400 to-pink-400' : 'from-pink-400 to-purple-400'} rounded-full animate-pulse`}
-                    style={{
-                        left: `${Math.random() * 100}%`,
-                        top: `${Math.random() * 100}%`,
-                        animationDelay: `${Math.random() * 2}s`,
-                        animationDuration: `${1 + Math.random() * 2}s`
-                    }}
-                />
-            ))}
-        </div>
-    );
+    // Particle effect component - optimized with useMemo
+    const ParticleEffect = ({ color, isActive }) => {
+        const particles = useMemo(() => 
+            [...Array(20)].map((_, i) => ({
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                delay: `${Math.random() * 2}s`,
+                duration: `${1 + Math.random() * 2}s`
+            })), []
+        );
+        
+        return (
+            <div className={`absolute inset-0 overflow-hidden rounded-2xl pointer-events-none ${isActive ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
+                {particles.map((particle, i) => (
+                    <div
+                        key={i}
+                        className={`absolute w-1 h-1 bg-gradient-to-r ${color === 'purple' ? 'from-purple-400 to-pink-400' : 'from-pink-400 to-purple-400'} rounded-full animate-pulse`}
+                        style={{
+                            left: particle.left,
+                            top: particle.top,
+                            animationDelay: particle.delay,
+                            animationDuration: particle.duration
+                        }}
+                    />
+                ))}
+            </div>
+        );
+    };
 
     return (
         <>
-            <div id='events' className='z-10 text-white bg pt-10 pb-20 relative overflow-hidden'>
+            <div id='events' className='z-10 text-white bg pt-10 pb-20 relative overflow-hidden' style={{ backgroundColor: '#05011a' }}>
                 {/* Cosmic Background Effects */}
                 <div className='absolute inset-0 overflow-hidden'>
                     <div className='absolute top-20 left-10 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-75'></div>
@@ -230,9 +241,12 @@ const Events = () => {
                 </h1>
 
                 {/* INSANE Toggle Buttons */}
-                <div className='flex justify-center gap-6 my-12 relative z-10'>
+                <div className='flex justify-center gap-6 my-12 relative z-10' role="tablist" aria-label="Timeline days">
                     <button
                         onClick={() => setActiveDay('day1')}
+                        role="tab"
+                        aria-selected={activeDay === 'day1'}
+                        aria-controls="day1-timeline"
                         className={`relative px-10 py-5 text-lg font-bold rounded-2xl border-2 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 overflow-hidden group
                             ${activeDay === 'day1'
                                 ? 'bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 border-purple-400 text-white shadow-2xl shadow-purple-500/50 animate-pulse'
@@ -245,6 +259,9 @@ const Events = () => {
                     </button>
                     <button
                         onClick={() => setActiveDay('day2')}
+                        role="tab"
+                        aria-selected={activeDay === 'day2'}
+                        aria-controls="day2-timeline"
                         className={`relative px-10 py-5 text-lg font-bold rounded-2xl border-2 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 overflow-hidden group
                             ${activeDay === 'day2'
                                 ? 'bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 border-purple-400 text-white shadow-2xl shadow-purple-500/50 animate-pulse'
@@ -260,22 +277,28 @@ const Events = () => {
 
             </div>
 
-            {/* Timeline Events */}
-            <div className='space-y-12 bg'>
-                {currentEvents.map((event, index) => (
-                    <FadeUp key={index} delay={index * 0.15}>
-                        <div
-                            className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} group`}
-                            onMouseEnter={() => setHoveredEvent(index)}
-                            onMouseLeave={() => setHoveredEvent(null)}
-                        >
-                            {/* Animated Timeline Dot */}
-                            <div className='absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-black shadow-2xl z-20 animate-pulse'>
-                                <div className='absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-ping opacity-75'></div>
-                            </div>
+            {/* Timeline Container */}
+            <div className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10' style={{ backgroundColor: '#05011a' }}>
+                <div className='relative'>
+                    {/* Timeline Line */}
+                    <div className='absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full shadow-lg'></div>
+                    
+                    {/* Timeline Events */}
+                    <div className='space-y-12'>
+                        {currentEvents.map((event, index) => (
+                            <FadeUp key={index} delay={index * 0.15}>
+                                <div
+                                    className={`relative flex items-center justify-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} group`}
+                                    onMouseEnter={() => setHoveredEvent(index)}
+                                    onMouseLeave={() => setHoveredEvent(null)}
+                                >
+                                    {/* Animated Timeline Dot */}
+                                    <div className='absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-black shadow-2xl z-20 animate-pulse'>
+                                        <div className='absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-ping opacity-75'></div>
+                                    </div>
 
                             {/* INSANE Event Card */}
-                            <div className={`ml-12 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-1' : 'md:ml-auto md:pl-1'}`}>
+                            <div className={`ml-6 md:ml-0 md:w-4/12 ${index % 2 === 0 ? 'md:mr-140' : 'md:ml-140'}`}>
                                 <div
                                     className={`relative p-8 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20 transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 shadow-2xl group-hover:shadow-3xl overflow-hidden
                                                     ${hoveredEvent === index ? 'border-purple-400/60 shadow-purple-500/30' : 'hover:border-purple-400/40'}
@@ -324,8 +347,9 @@ const Events = () => {
                         </div>
                     </FadeUp>
                 ))}
+                    </div>
+                </div>
             </div>
-        
         </>
     )
 }
