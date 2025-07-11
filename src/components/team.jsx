@@ -7,7 +7,8 @@ const team = () => {
             <div id='team' className='z-10 text-white bg pt-10 px-[5vw]'>
                 <h1 className='text-center text-5xl font-bold p-5 '>Our Judges</h1>
                 <div className="centre flex-wrap w-full gap-5">
-                    <FadeUp className="text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
                         <h2>To Be Announced</h2>
                         <h3></h3>
@@ -16,7 +17,8 @@ const team = () => {
                         </div>
                     </FadeUp>
 
-                    <FadeUp delay={0.2} className="text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.2} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
                         <h2>To Be Announced</h2>
                         <h3></h3>
@@ -26,7 +28,8 @@ const team = () => {
                     </FadeUp>
 
 
-                    <FadeUp delay={0.4} className="text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.4} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
                         <h2>To Be Announced</h2>
                         <h3></h3>
@@ -35,7 +38,8 @@ const team = () => {
                         </div>
 
                     </FadeUp>
-                    <FadeUp delay={0.6} className="text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.6} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/profile.png" alt="" className='rounded-full' />
                         <h2>To Be Announced</h2>
                         <h3></h3>
@@ -48,7 +52,8 @@ const team = () => {
                 <h1 className='text-center text-5xl font-bold p-5 '>Our Team</h1>
                 <div className="centre flex-wrap w-full gap-5">
 
-                    <FadeUp delay={0.1} className="capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.1} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/manan.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Manan Aggarwal</h2>
                         <h3>Tech Head</h3>
@@ -64,7 +69,8 @@ const team = () => {
                         </div>
                     </FadeUp>
 
-                    <FadeUp delay={0.2} className="capsule h-62 text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.2} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule h-62 text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/priyanshu.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Priyanshu Kaushik</h2>
                         <h3>Media Head</h3>
@@ -80,7 +86,8 @@ const team = () => {
                         </div>
                     </FadeUp>
 
-                    <FadeUp delay={0.3} className="capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.3} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/aditya.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold ">Aditya Pratap Sisodia</h2>
                         <h3>Logistic Head</h3>
@@ -95,7 +102,8 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                    <FadeUp delay={0.4} className="capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.4} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/saanvi.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Saanvi Jindal</h2>
                         <h3>Operations Head</h3>
@@ -113,7 +121,8 @@ const team = () => {
 
                    
 
-                    <FadeUp delay={0.1} className="capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.1} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/bhavya.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Bhavya Jain</h2>
                         <h3>Graphic Head</h3>
@@ -128,7 +137,8 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                    <FadeUp delay={0.2} className="capsule h-62 p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.2} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule h-62 p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/sonali.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Sonali Samal</h2>
                         <h3>Finance Head</h3>
@@ -143,7 +153,8 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                     <FadeUp delay={0.3} className="capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                     <FadeUp delay={0.3} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                    float-animation capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/prisha.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Prisha Rawat</h2>
                         <h3>PR & Sponserships Head</h3>
