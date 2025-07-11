@@ -36,7 +36,7 @@ const events = () => {
                 </div>
 
                 <div className='w-[100vw] h-500 sm:h-400 mt-5 pl-5 flex lg:justify-center lg:pl-0'>
-                    <img src="./images/eventbg.jpg" alt="" className='absolute opacity-40' />
+                    <img src="./images/eventbg.jpg" alt="" className='absolute opacity-40 w-[90vw]' />
 
                     {activeDay === 'day1' && (
                         <div className='flex flex-col w-1 relative h-full bg-gray-500 rounded-full z-20'>
