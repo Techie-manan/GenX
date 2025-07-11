@@ -258,76 +258,74 @@ const Events = () => {
                 </div>
 
 
-                        </div>
-                        
-                        {/* Timeline Events */}
-                        <div className='space-y-12'>
-                            {currentEvents.map((event, index) => (
-                                <FadeUp key={index} delay={index * 0.15}>
-                                    <div 
-                                        className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} group`}
-                                        onMouseEnter={() => setHoveredEvent(index)}
-                                        onMouseLeave={() => setHoveredEvent(null)}
-                                    >
-                                        {/* Animated Timeline Dot */}
-                                        <div className='absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-black shadow-2xl z-20 animate-pulse'>
-                                            <div className='absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-ping opacity-75'></div>
-                                        </div>
-                                        
-                                        {/* INSANE Event Card */}
-                                        <div className={`ml-12 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-1' : 'md:ml-auto md:pl-1'}`}>
-                                            <div 
-                                                className={`relative p-8 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20 transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 shadow-2xl group-hover:shadow-3xl overflow-hidden
+            </div>
+
+            {/* Timeline Events */}
+            <div className='space-y-12 bg'>
+                {currentEvents.map((event, index) => (
+                    <FadeUp key={index} delay={index * 0.15}>
+                        <div
+                            className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} group`}
+                            onMouseEnter={() => setHoveredEvent(index)}
+                            onMouseLeave={() => setHoveredEvent(null)}
+                        >
+                            {/* Animated Timeline Dot */}
+                            <div className='absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-black shadow-2xl z-20 animate-pulse'>
+                                <div className='absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-ping opacity-75'></div>
+                            </div>
+
+                            {/* INSANE Event Card */}
+                            <div className={`ml-12 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-1' : 'md:ml-auto md:pl-1'}`}>
+                                <div
+                                    className={`relative p-8 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20 transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 shadow-2xl group-hover:shadow-3xl overflow-hidden
                                                     ${hoveredEvent === index ? 'border-purple-400/60 shadow-purple-500/30' : 'hover:border-purple-400/40'}
                                                 `}
-                                                style={{
-                                                    transform: hoveredEvent === index ? 
-                                                        `perspective(1000px) rotateY(${(mousePosition.x - window.innerWidth / 2) * 0.01}deg) rotateX(${(mousePosition.y - window.innerHeight / 2) * 0.01}deg)` : 
-                                                        'perspective(1000px) rotateY(0deg) rotateX(0deg)'
-                                                }}
-                                            >
-                                                {/* Particle Effect */}
-                                                <ParticleEffect color={event.particleColor} isActive={hoveredEvent === index} />
-                                                
-                                                {/* Floating Icon */}
-                                                <div className={`absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-r ${event.color} rounded-full flex items-center justify-center text-3xl shadow-2xl animate-bounce group-hover:animate-spin transition-all duration-500`}>
-                                                    <div className='absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full'></div>
-                                                    {event.icon}
-                                                </div>
-                                                
-                                                {/* Glowing Border Effect */}
-                                                <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${event.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}></div>
-                                                
-                                                {/* Content */}
-                                                <div className='relative z-10 mt-6'>
-                                                    <div className='flex items-center justify-between mb-4'>
-                                                        <h3 className='text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-500'>
-                                                            {event.title}
-                                                        </h3>
-                                                        <span className='text-sm font-bold text-purple-300 bg-gradient-to-r from-purple-500/30 to-pink-500/30 px-4 py-2 rounded-full border border-purple-400/30 backdrop-blur-md animate-pulse'>
-                                                            {event.time}
-                                                        </span>
-                                                    </div>
-                                                    <p className='text-gray-300 leading-relaxed text-lg group-hover:text-white transition-colors duration-500'>
-                                                        {event.description}
-                                                    </p>
-                                                </div>
-                                                
-                                                {/* Hover Glow Effect */}
-                                                <div className={`absolute inset-0 bg-gradient-to-r ${event.color} rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                                                
-                                                {/* Floating Elements */}
-                                                <div className='absolute top-4 right-4 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-60'></div>
-                                                <div className='absolute bottom-4 left-4 w-1 h-1 bg-pink-400 rounded-full animate-pulse opacity-80'></div>
-                                            </div>
-                                        </div>
+                                    style={{
+                                        transform: hoveredEvent === index ?
+                                            `perspective(1000px) rotateY(${(mousePosition.x - window.innerWidth / 2) * 0.01}deg) rotateX(${(mousePosition.y - window.innerHeight / 2) * 0.01}deg)` :
+                                            'perspective(1000px) rotateY(0deg) rotateX(0deg)'
+                                    }}
+                                >
+                                    {/* Particle Effect */}
+                                    <ParticleEffect color={event.particleColor} isActive={hoveredEvent === index} />
+
+                                    {/* Floating Icon */}
+                                    <div className={`absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-r ${event.color} rounded-full flex items-center justify-center text-3xl shadow-2xl animate-bounce group-hover:animate-spin transition-all duration-500`}>
+                                        <div className='absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full'></div>
+                                        {event.icon}
                                     </div>
-                                </FadeUp>
-                            ))}
+
+                                    {/* Glowing Border Effect */}
+                                    <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${event.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}></div>
+
+                                    {/* Content */}
+                                    <div className='relative z-10 mt-6'>
+                                        <div className='flex items-center justify-between mb-4'>
+                                            <h3 className='text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-500'>
+                                                {event.title}
+                                            </h3>
+                                            <span className='text-sm font-bold text-purple-300 bg-gradient-to-r from-purple-500/30 to-pink-500/30 px-4 py-2 rounded-full border border-purple-400/30 backdrop-blur-md animate-pulse'>
+                                                {event.time}
+                                            </span>
+                                        </div>
+                                        <p className='text-gray-300 leading-relaxed text-lg group-hover:text-white transition-colors duration-500'>
+                                            {event.description}
+                                        </p>
+                                    </div>
+
+                                    {/* Hover Glow Effect */}
+                                    <div className={`absolute inset-0 bg-gradient-to-r ${event.color} rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+
+                                    {/* Floating Elements */}
+                                    <div className='absolute top-4 right-4 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-60'></div>
+                                    <div className='absolute bottom-4 left-4 w-1 h-1 bg-pink-400 rounded-full animate-pulse opacity-80'></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </FadeUp>
+                ))}
             </div>
+        
         </>
     )
 }
