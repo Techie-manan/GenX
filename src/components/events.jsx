@@ -1,300 +1,341 @@
-import React, { useState } from 'react'
-import FadeLeft from './OnscrollAni/fadeleft'
-import FadeRight from './OnscrollAni/faderight'
+import React, { useState, useEffect } from 'react'
+import FadeUp from './OnscrollAni/fadeup'
 
-const events = () => {
-
+const Events = () => {
     const [activeDay, setActiveDay] = useState('day1');
+    const [hoveredEvent, setHoveredEvent] = useState(null);
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+    // Track mouse position for 3D effects
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            setMousePosition({ x: e.clientX, y: e.clientY });
+        };
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
+    const day1Events = [
+        {
+            time: "09:00 AM",
+            title: "Launchpad Check-In",
+            description: "Arrival, registration & swags. Get your crew ready.",
+            icon: "🚀",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "10:00 AM",
+            title: "Mission Briefing",
+            description: "Opening ceremony, rules, theme briefing & partner showcase.",
+            icon: "📋",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "11:00 AM",
+            title: "Ignition Start",
+            description: "Hacking begins. Teams lock into their mission objectives.",
+            icon: "⚡",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "01:00 PM",
+            title: "Galactic Grub",
+            description: "Lunch break – recharge your fuel cells.",
+            icon: "🍕",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "02:00 PM",
+            title: "Spacewalk: Mentor Orbit #1",
+            description: "Mentors float in for the first feedback & Q/A round.",
+            icon: "👨‍🚀",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "04:00 PM",
+            title: "Blackhole Break",
+            description: "Quick energizer, coffee + networking zone.",
+            icon: "☕",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "05:00 PM",
+            title: "Code Meteor Shower",
+            description: "Side challenge: Build a tiny feature, win goodies.",
+            icon: "💻",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "06:30 PM",
+            title: "AI & Web3 Nebula Talk",
+            description: "Expert speaker session on frontier tech.",
+            icon: "🤖",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "08:00 PM",
+            title: "Meteor Bites",
+            description: "Dinner is served! Refuel for the long orbit.",
+            icon: "🍽️",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "09:00 PM",
+            title: "Mission Pulse Check",
+            description: "Midway team check-ins with mentors/judges.",
+            icon: "📊",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        }
+    ];
+
+    const day2Events = [
+        {
+            time: "12:00 AM",
+            title: "Starlight Chill Hour",
+            description: "Lo-fi zone + board games + surprise fun break.",
+            icon: "🌙",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "02:00 AM",
+            title: "Fuel-Up Station",
+            description: "Late night snacks + energy shots.",
+            icon: "⚡",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "03:00 AM",
+            title: "Dark Matter Debug Hour",
+            description: "Technical mentors available for all-night debugging help.",
+            icon: "🐛",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "05:00 AM",
+            title: "Solar Stretch",
+            description: "Light yoga/stretch break to reboot minds.",
+            icon: "🧘",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "06:30 AM",
+            title: "Final Orbit",
+            description: "Last push, polish your project, prep your decks.",
+            icon: "🎯",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "08:30 AM",
+            title: "Docking Complete: Submissions",
+            description: "Final submissions close. Code freeze.",
+            icon: "🔒",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "09:00 AM",
+            title: "Mission Demo Day",
+            description: "Top teams present to the jury panel. Blast your ideas!",
+            icon: "🎤",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        },
+        {
+            time: "11:00 AM",
+            title: "Award Ceremony & Touchdown",
+            description: "Winner announcements, closing notes, and a cosmic group photo.",
+            icon: "🏆",
+            color: "from-pink-500 to-purple-500",
+            glow: "shadow-pink-500/50",
+            particleColor: "pink"
+        },
+        {
+            time: "12:00 PM",
+            title: "Re-entry & Departure",
+            description: "Goodbye hugs, feedback & community sign-ups.",
+            icon: "👋",
+            color: "from-purple-500 to-pink-500",
+            glow: "shadow-purple-500/50",
+            particleColor: "purple"
+        }
+    ];
+
+    const currentEvents = activeDay === 'day1' ? day1Events : day2Events;
+
+    // Particle effect component
+    const ParticleEffect = ({ color, isActive }) => (
+        <div className={`absolute inset-0 overflow-hidden rounded-2xl pointer-events-none ${isActive ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
+            {[...Array(20)].map((_, i) => (
+                <div
+                    key={i}
+                    className={`absolute w-1 h-1 bg-gradient-to-r ${color === 'purple' ? 'from-purple-400 to-pink-400' : 'from-pink-400 to-purple-400'} rounded-full animate-pulse`}
+                    style={{
+                        left: `${Math.random() * 100}%`,
+                        top: `${Math.random() * 100}%`,
+                        animationDelay: `${Math.random() * 2}s`,
+                        animationDuration: `${1 + Math.random() * 2}s`
+                    }}
+                />
+            ))}
+        </div>
+    );
 
     return (
         <>
-            <div id='events' className='z-10 text-white bg pt-10 pb-27'>
-                <h1 className='text-center text-5xl font-bold p-5 '>Timeline</h1>
+            <div id='events' className='z-10 text-white bg pt-10 pb-20 relative overflow-hidden'>
+                {/* Cosmic Background Effects */}
+                <div className='absolute inset-0 overflow-hidden'>
+                    <div className='absolute top-20 left-10 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-75'></div>
+                    <div className='absolute top-40 right-20 w-1 h-1 bg-pink-400 rounded-full animate-pulse opacity-60'></div>
+                    <div className='absolute bottom-40 left-1/4 w-3 h-3 bg-purple-300 rounded-full animate-bounce opacity-50'></div>
+                    <div className='absolute top-1/2 right-1/3 w-1 h-1 bg-pink-300 rounded-full animate-ping opacity-70'></div>
+                </div>
 
-                {/* Toggle Buttons */}
-                <div className='flex justify-center gap-4 my-4'>
+                <h1 className='text-center text-5xl font-bold p-5 relative z-10'>
+                    <span className='bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-pulse'>
+                        Timeline
+                    </span>
+                </h1>
+
+                {/* INSANE Toggle Buttons */}
+                <div className='flex justify-center gap-6 my-12 relative z-10'>
                     <button
                         onClick={() => setActiveDay('day1')}
-                        className={`px-10 py-3 bg-gradient-to-l from-pink-500/40 to-purple-500/10  backdrop-blur-md text-white font-medium text-lg rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1
+                        className={`relative px-10 py-5 text-lg font-bold rounded-2xl border-2 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 overflow-hidden group
                             ${activeDay === 'day1'
-                                ? ' text-white'
-                                : 'bg-gray-700 text-gray-300'
+                                ? 'bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 border-purple-400 text-white shadow-2xl shadow-purple-500/50 animate-pulse'
+                                : 'bg-black/30 border-white/20 text-gray-300 hover:border-purple-400 hover:text-white backdrop-blur-md hover:shadow-2xl hover:shadow-purple-500/25'
                             }`}
                     >
-                        Day 1
+                        <span className='relative z-10'>Day 1</span>
+                        <div className='absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                        <div className='absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-0 group-hover:opacity-75 transition-opacity duration-300'></div>
                     </button>
                     <button
                         onClick={() => setActiveDay('day2')}
-                        className={`px-10 py-3 text-lg bg-gradient-to-r from-purple-500/10 to-pink-500/40 backdrop-blur-md text-white font-medium rounded-2xl border border-white/20 hover:border-white/40 hover:bg-white/15 transition-all duration-500 ease-out cursor-pointer pointer-events-auto shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1
+                        className={`relative px-10 py-5 text-lg font-bold rounded-2xl border-2 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 overflow-hidden group
                             ${activeDay === 'day2'
-                                ? ' text-white'
-                                : 'bg-gray-700 text-gray-300'
+                                ? 'bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 border-purple-400 text-white shadow-2xl shadow-purple-500/50 animate-pulse'
+                                : 'bg-black/30 border-white/20 text-gray-300 hover:border-purple-400 hover:text-white backdrop-blur-md hover:shadow-2xl hover:shadow-purple-500/25'
                             }`}
                     >
-                        Day 2
+                        <span className='relative z-10'>Day 2</span>
+                        <div className='absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                        <div className='absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-0 group-hover:opacity-75 transition-opacity duration-300'></div>
                     </button>
                 </div>
 
-                <div className='w-[100vw] h-500 sm:h-400 mt-5 pl-5 flex lg:justify-center lg:pl-0'>
-                    <img src="./images/eventbg.jpg" alt="" className='absolute opacity-40' />
-
-                    {activeDay === 'day1' && (
-                        <div className='flex flex-col w-1 relative h-full bg-gray-500 rounded-full z-20'>
-                            <div className="circle -top-1">
-                                <FadeRight>
-                                    <div className='shadow-lg shadow-fuchsia-500 box2'>
-                                        <div>
-                                            <div className="text-xl font-semibold">Launchpad Check-In</div>
-                                            <div className="text-gray-500 font-medium">09:00 AM</div>
-                                            <p className='mt-2 list-none'>Arrival, registration & swags. Get your crew ready.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-1/10">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Mission Briefing</div>
-                                            <div className="text-gray-500 font-medium">10:00 AM</div>
-                                            <p className='mt-2 list-none'>Opening ceremony, rules, theme briefing & partner showcase.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-2/10">
-                                <FadeRight>
-                                    <div className='box2 shadow-lg shadow-fuchsia-500'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Ignition Start</div>
-                                            <div className="text-gray-500 font-medium">11:00 AM</div>
-                                            <p className='mt-2 list-none'>Hacking begins. Teams lock into their mission objectives.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-3/10">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold"> Galactic Grub</div>
-                                            <div className="text-gray-500 font-medium">01:00 PM</div>
-                                            <p className='mt-2 list-none'>Lunch break – recharge your fuel cells.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-4/10">
-                                <FadeRight>
-                                    <div className='box2 shadow-lg shadow-fuchsia-500'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Spacewalk: Mentor Orbit #1</div>
-                                            <div className="text-gray-500 font-medium">02:00 PM</div>
-                                            <p className='mt-2 list-none'>Mentors float in for the first feedback & Q/A round.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-5/10">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Blackhole Break </div>
-                                            <div className="text-gray-500 font-medium">04:00 PM</div>
-                                            <p className='mt-2 list-none'>Quick energizer, coffee + networking zone.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-6/10">
-                                <FadeRight>
-                                    <div className='shadow-lg shadow-fuchsia-500 box2'>
-                                        <div>
-                                            <div className="text-xl font-semibold">Code Meteor Shower</div>
-                                            <div className="text-gray-500 font-medium">05:00 PM</div>
-                                            <p className='mt-2 list-none'>Side challenge: Build a tiny feature, win goodies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-7/10">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">AI & Web3 Nebula Talk</div>
-                                            <div className="text-gray-500 font-medium">06:30 PM</div>
-                                            <p className='mt-2 list-none'>Expert speaker session on frontier tech.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-8/10">
-                                <FadeRight>
-                                    <div className='box2 shadow-lg shadow-fuchsia-500'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Meteor Bites</div>
-                                            <div className="text-gray-500 font-medium">08:00 PM</div>
-                                            <p className='mt-2 list-none'>Dinner is served! Refuel for the long orbit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-9/10">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Mission Pulse Check</div>
-                                            <div className="text-gray-500 font-medium">09:00 PM</div>
-                                            <p className='mt-2 list-none'>	Midway team check-ins with mentors/judges.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
+                {/* INSANE Timeline Container */}
+                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
+                    <div className='relative'>
+                        {/* Animated Timeline Line */}
+                        <div className='absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full'>
+                            <div className='absolute inset-0 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full animate-pulse opacity-75'></div>
+                            <div className='absolute top-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce'></div>
                         </div>
-                    )}
-
-                    {activeDay === 'day2' && (
-                        <div className='flex flex-col w-1 relative h-full bg-gray-500 rounded-full z-20'>
-                            <div className="circle -top-1">
-                                <FadeRight>
-                                    <div className='shadow-lg shadow-fuchsia-500 box2'>
-                                        <div>
-                                            <div className="text-xl font-semibold">Starlight Chill Hour</div>
-                                            <div className="text-gray-500 font-medium">12:00 AM</div>
-                                            <p className='mt-2 list-none'>Lo-fi zone + board games + surprise fun break.
-                                            </p>
+                        
+                        {/* Timeline Events */}
+                        <div className='space-y-12'>
+                            {currentEvents.map((event, index) => (
+                                <FadeUp key={index} delay={index * 0.15}>
+                                    <div 
+                                        className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} group`}
+                                        onMouseEnter={() => setHoveredEvent(index)}
+                                        onMouseLeave={() => setHoveredEvent(null)}
+                                    >
+                                        {/* Animated Timeline Dot */}
+                                        <div className='absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-black shadow-2xl z-20 animate-pulse'>
+                                            <div className='absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-ping opacity-75'></div>
+                                        </div>
+                                        
+                                        {/* INSANE Event Card */}
+                                        <div className={`ml-12 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-1' : 'md:ml-auto md:pl-1'}`}>
+                                            <div 
+                                                className={`relative p-8 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20 transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 shadow-2xl group-hover:shadow-3xl overflow-hidden
+                                                    ${hoveredEvent === index ? 'border-purple-400/60 shadow-purple-500/30' : 'hover:border-purple-400/40'}
+                                                `}
+                                                style={{
+                                                    transform: hoveredEvent === index ? 
+                                                        `perspective(1000px) rotateY(${(mousePosition.x - window.innerWidth / 2) * 0.01}deg) rotateX(${(mousePosition.y - window.innerHeight / 2) * 0.01}deg)` : 
+                                                        'perspective(1000px) rotateY(0deg) rotateX(0deg)'
+                                                }}
+                                            >
+                                                {/* Particle Effect */}
+                                                <ParticleEffect color={event.particleColor} isActive={hoveredEvent === index} />
+                                                
+                                                {/* Floating Icon */}
+                                                <div className={`absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-r ${event.color} rounded-full flex items-center justify-center text-3xl shadow-2xl animate-bounce group-hover:animate-spin transition-all duration-500`}>
+                                                    <div className='absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full'></div>
+                                                    {event.icon}
+                                                </div>
+                                                
+                                                {/* Glowing Border Effect */}
+                                                <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${event.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}></div>
+                                                
+                                                {/* Content */}
+                                                <div className='relative z-10 mt-6'>
+                                                    <div className='flex items-center justify-between mb-4'>
+                                                        <h3 className='text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-500'>
+                                                            {event.title}
+                                                        </h3>
+                                                        <span className='text-sm font-bold text-purple-300 bg-gradient-to-r from-purple-500/30 to-pink-500/30 px-4 py-2 rounded-full border border-purple-400/30 backdrop-blur-md animate-pulse'>
+                                                            {event.time}
+                                                        </span>
+                                                    </div>
+                                                    <p className='text-gray-300 leading-relaxed text-lg group-hover:text-white transition-colors duration-500'>
+                                                        {event.description}
+                                                    </p>
+                                                </div>
+                                                
+                                                {/* Hover Glow Effect */}
+                                                <div className={`absolute inset-0 bg-gradient-to-r ${event.color} rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                                                
+                                                {/* Floating Elements */}
+                                                <div className='absolute top-4 right-4 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-60'></div>
+                                                <div className='absolute bottom-4 left-4 w-1 h-1 bg-pink-400 rounded-full animate-pulse opacity-80'></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-1/8">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Fuel-Up Station</div>
-                                            <div className="text-gray-500 font-medium">02:00 AM</div>
-                                            <p className='mt-2 list-none'>Late night snacks + energy shots.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-2/8">
-                                <FadeRight>
-                                    <div className='box2 shadow-lg shadow-fuchsia-500'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Dark Matter Debug Hour</div>
-                                            <div className="text-gray-500 font-medium">03:00 AM</div>
-                                            <p className='mt-2 list-none'>Technical mentors available for all-night debugging help.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-3/8">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold"> Solar Stretch</div>
-                                            <div className="text-gray-500 font-medium">05:00 AM</div>
-                                            <p className='mt-2 list-none'>Light yoga/stretch break to reboot minds.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-4/8">
-                                <FadeRight>
-                                    <div className='box2 shadow-lg shadow-fuchsia-500'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Final Orbit</div>
-                                            <div className="text-gray-500 font-medium">06:30 AM</div>
-                                            <p className='mt-2 list-none'>Last push, polish your project, prep your decks.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-5/8">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">	Docking Complete: Submissions  </div>
-                                            <div className="text-gray-500 font-medium">08:30 AM</div>
-                                            <p className='mt-2 list-none'>Final submissions close. Code freeze.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-6/8">
-                                <FadeRight>
-                                    <div className='shadow-lg shadow-fuchsia-500 box2'>
-                                        <div>
-                                            <div className="text-xl font-semibold">	Mission Demo Day</div>
-                                            <div className="text-gray-500 font-medium">09:00 AM</div>
-                                            <p className='mt-2 list-none'>Top teams present to the jury panel. Blast your ideas!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            <div className="circle top-7/8">
-                                <FadeLeft>
-                                    <div className='shadow-lg shadow-red-500 box3 left-7 lg:-left-103'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Award Ceremony & Touchdown</div>
-                                            <div className="text-gray-500 font-medium">11:00 AM</div>
-                                            <p className='mt-2 list-none'>Winner announcements, closing notes, and a cosmic group photo.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeLeft>
-                            </div>
-                            <div className="circle top-8/8">
-                                <FadeRight>
-                                    <div className='box2 shadow-lg shadow-fuchsia-500'>
-
-                                        <div>
-                                            <div className="text-xl font-semibold">Re-entry & Departure</div>
-                                            <div className="text-gray-500 font-medium">12:00 PM</div>
-                                            <p className='mt-2 list-none'>Goodbye hugs, feedback & community sign-ups.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </FadeRight>
-                            </div>
-                            
+                                </FadeUp>
+                            ))}
                         </div>
-                    )}
+                    </div>
                 </div>
             </div>
         </>
     )
 }
 
-export default events
+export default Events
