@@ -47,7 +47,7 @@ const Faq = () => {
 
   return (
     <div id='faq' className='z-10 text-white bg pt-10 px-[5vw]'>
-      <h1 className='text-center text-5xl font-bold p-5'>FAQs</h1>
+      <h1 className='text-center text-5xl font-bold p-5 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>FAQs</h1>
       <div className='flex justify-center flex-col md:flex-row w-full gap-6'>
         <div className='flex flex-col gap-3 md:w-1/2'>
           {faqList.slice(0, 4).map((faq, index) => (

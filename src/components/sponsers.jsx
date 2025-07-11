@@ -13,7 +13,7 @@ const sponsers = () => {
     return (
         <>
             <div id='sponsors' className='z-10 text-white bg pt-10 px-[5vw]'>
-                <h1 className='text-center text-5xl font-bold p-5 '>Sponsers</h1>
+                <h1 className='text-center text-5xl font-bold p-5 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Sponsers</h1>
                 <div className="centre flex-wrap w-full gap-5 p-8 capsule">
                     <h2>To Be Revealed..</h2>
                     {/* <img src="genesis.png" alt="" height={100} className='h-50' />

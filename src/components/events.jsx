@@ -44,7 +44,7 @@ const Events = () => {
             particleColor: "purple"
         },
         {
-            time: "01:00 PM",
+            time: "12:00 PM",
             title: "Galactic Grub",
             description: "Lunch break – recharge your fuel cells.",
             icon: "🍕",

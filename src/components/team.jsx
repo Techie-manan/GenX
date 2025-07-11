@@ -5,7 +5,7 @@ const team = () => {
     return (
         <>
             <div id='team' className='z-10 text-white bg pt-10 px-[5vw]'>
-                <h1 className='text-center text-5xl font-bold p-5 '>Our Judges</h1>
+                <h1 className='text-center text-5xl font-bold p-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Our Judges</h1>
                 <div className="centre flex-wrap w-full gap-5">
                     <FadeUp className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
                     float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
@@ -13,7 +13,6 @@ const team = () => {
                         <h2>To Be Announced</h2>
                         <h3></h3>
                         <div className="centre">
-
                         </div>
                     </FadeUp>
 
@@ -26,7 +25,6 @@ const team = () => {
 
                         </div>
                     </FadeUp>
-
 
                     <FadeUp delay={0.4} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
                     float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
@@ -49,11 +47,10 @@ const team = () => {
                     </FadeUp>
                 </div>
 
-                <h1 className='text-center text-5xl font-bold p-5 '>Our Team</h1>
+                <h1 className='text-center text-5xl font-bold p-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Our Team</h1>
                 <div className="centre flex-wrap w-full gap-5">
 
-                    <FadeUp delay={0.1} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
+                    <FadeUp delay={0.1} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/manan.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Manan Aggarwal</h2>
                         <h3>Tech Head</h3>
@@ -153,7 +150,7 @@ const team = () => {
                                 </a></div>
                         </div>
                     </FadeUp>
-                     <FadeUp delay={0.3} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
+                     <FadeUp delay={0.3} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 h-62
                     float-animation capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
                         <img src="./images/prisha.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">Prisha Rawat</h2>
