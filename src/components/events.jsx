@@ -257,13 +257,7 @@ const Events = () => {
                     </button>
                 </div>
 
-                {/* INSANE Timeline Container */}
-                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-                    <div className='relative'>
-                        {/* Animated Timeline Line */}
-                        <div className='absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full'>
-                            <div className='absolute inset-0 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full animate-pulse opacity-75'></div>
-                            <div className='absolute top-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce'></div>
+
                         </div>
                         
                         {/* Timeline Events */}
