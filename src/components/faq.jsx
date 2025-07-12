@@ -51,7 +51,7 @@ const Faq = () => {
       <div className='flex justify-center flex-col md:flex-row w-full gap-6'>
         <div className='flex flex-col gap-3 md:w-1/2'>
           {faqList.slice(0, 4).map((faq, index) => (
-            <FaqItem key={index} question={faq.question} answer={faq.answer} />
+            <FaqItem key={index} question={faq.question} answer={faq.answer} className=''/>
           ))}
         </div>
         <div className='flex flex-col gap-3 md:w-1/2'>

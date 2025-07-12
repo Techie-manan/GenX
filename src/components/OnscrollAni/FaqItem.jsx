@@ -1,4 +1,3 @@
-// OnscrollAni/faqani.jsx
 import React, { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronDown } from 'react-icons/fa';
@@ -8,7 +7,14 @@ const FaqItem = ({ question, answer }) => {
   const contentRef = useRef(null);
 
   return (
-    <div className='faq-item p-5 rounded-lg bg-black/20 backdrop-blur-md shadow-md'>
+    <motion.div
+      className='faq-item p-5 rounded-lg bg-black/20 backdrop-blur-md shadow-md'
+      whileHover={{
+        scale: 1.05,
+        boxShadow: '0px 8px 20px rgba(168, 85, 247, 0.5)' // Tailwind's purple-500
+      }}
+      transition={{ type: 'spring', stiffness: 300 }}
+    >
       <div
         className='flex items-center justify-between cursor-pointer'
         onClick={() => setIsOpen(!isOpen)}
@@ -21,22 +27,23 @@ const FaqItem = ({ question, answer }) => {
           <FaChevronDown />
         </motion.div>
       </div>
+
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ 
-              height: "auto", 
+              height: 'auto',
               opacity: 1,
-              transition: { 
+              transition: {
                 height: { duration: 0.4 },
                 opacity: { duration: 0.3, delay: 0.1 }
               }
             }}
             exit={{ 
-              height: 0, 
+              height: 0,
               opacity: 0,
-              transition: { 
+              transition: {
                 height: { duration: 0.3 },
                 opacity: { duration: 0.2 }
               }
@@ -49,7 +56,7 @@ const FaqItem = ({ question, answer }) => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 

@@ -47,10 +47,8 @@
     border: 1px solid rgba(95, 95, 113, 0.22);
 }
 
-.capsule:hover {
-box-shadow: purple 0px 0px 16px 0px, rgba(255, 255, 255, 0.08) inset;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+.rounded-6xl{
+    border-radius: 50px;
 }
 
 .box {

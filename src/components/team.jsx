@@ -1,175 +1,111 @@
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
-import FadeUp from './OnscrollAni/fadeup'
+import FadeUp from './OnscrollAni/fadeup';
 
-const team = () => {
+const judges = [
+    { name: "To Be Announced", img: "./images/profile.png" },
+    { name: "To Be Announced", img: "./images/profile.png" },
+    { name: "To Be Announced", img: "./images/profile.png" },
+    { name: "To Be Announced", img: "./images/profile.png" },
+];
+
+const teamMembers = [
+    {
+        name: "Manan Aggarwal",
+        role: "Tech Head",
+        img: "./images/manan.jpg",
+        instagram: "https://www.instagram.com/m.ana._n/?hl=en",
+        linkedin: "https://www.linkedin.com/in/manan-aggarwal-3572a3327",
+    },
+    {
+        name: "Priyanshu Kaushik",
+        role: "Media Head",
+        img: "./images/priyanshu.png",
+        instagram: "https://www.instagram.com/priyanshu_me7/?utm_source=ig_web_button_share_sheet",
+        linkedin: "",
+    },
+    {
+        name: "Aditya Pratap Sisodia",
+        role: "Logistic Head",
+        img: "./images/aditya.jpg",
+        instagram: "https://www.instagram.com/_adiittyyaa_?igsh=MW8xdmRjMGhheHUyag==",
+        linkedin: "https://www.linkedin.com/in/aditya-sisodia-33a314279",
+    },
+    {
+        name: "Saanvi Jindal",
+        role: "Operations Head",
+        img: "./images/saanvi.jpg",
+        instagram: "https://www.instagram.com/s1v.ni?igsh=OWw0NjF2MjVxNGFp",
+        linkedin: "https://www.linkedin.com/in/saanvi-jindal-206222266",
+    },
+    {
+        name: "Bhavya Jain",
+        role: "Graphic Head",
+        img: "./images/bhavya.png",
+        instagram: "https://www.instagram.com/based.bhavya?igsh=MXRua201Z2k4OWZtZA==",
+        linkedin: "https://www.linkedin.com/in/bhavya-jain-28a89a311",
+    },
+    {
+        name: "Sonali Samal",
+        role: "Finance Head",
+        img: "./images/sonali.jpg",
+        instagram: "https://www.instagram.com/_samisded_/",
+        linkedin: "https://www.linkedin.com/in/sonaliisamal/",
+    },
+    {
+        name: "Prisha Rawat",
+        role: "PR & Sponserships Head",
+        img: "./images/prisha.jpg",
+        instagram: "https://www.instagram.com/prisha_1.6?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        linkedin: "https://www.linkedin.com/in/prisha-rawat-63949b322",
+    },
+];
+
+const Team = () => {
     return (
-        <>
-            <div id='team' className='z-10 text-white bg pt-10 px-[5vw]'>
-                <h1 className='text-center text-5xl font-bold p-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Our Judges</h1>
-                <div className="centre flex-wrap w-full gap-5">
-                    <FadeUp className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>To Be Announced</h2>
-                        <h3></h3>
-                        <div className="centre">
-                        </div>
+        <div id='team' className='z-10 text-white bg pt-10 px-[5vw]'>
+            <h1 className='text-center text-5xl font-bold p-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Our Judges</h1>
+            <div className="centre flex-wrap w-full gap-5">
+                {judges.map((judge, index) => (
+                    <FadeUp key={index} delay={index * 0.2} className="group transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2 relative">
+                        <div className="absolute w-full h-full border-0 rounded-6xl  bg-gradient-to-r from-red-800/20 to-orange-500/20  opacity-0 group-hover:opacity-30 shadow-2xs group-hover:shadow-2xl group-hover:shadow-red-500 z-10"></div>
+                        <img src={judge.img} alt={judge.name} className='rounded-full' />
+                        <h2>{judge.name}</h2>
+                        <h3>{judge.role}</h3>
+                        <div className="centre z-0"></div>
                     </FadeUp>
-
-                    <FadeUp delay={0.2} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>To Be Announced</h2>
-                        <h3></h3>
-                        <div className="centre">
-
-                        </div>
-                    </FadeUp>
-
-                    <FadeUp delay={0.4} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>To Be Announced</h2>
-                        <h3></h3>
-                        <div className="centre">
-
-                        </div>
-
-                    </FadeUp>
-                    <FadeUp delay={0.6} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/profile.png" alt="" className='rounded-full' />
-                        <h2>To Be Announced</h2>
-                        <h3></h3>
-                        <div className="centre">
-
-                        </div>
-                    </FadeUp>
-                </div>
-
-                <h1 className='text-center text-5xl font-bold p-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Our Team</h1>
-                <div className="centre flex-wrap w-full gap-5">
-
-                    <FadeUp delay={0.1} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/manan.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Manan Aggarwal</h2>
-                        <h3>Tech Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/m.ana._n/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/manan-aggarwal-3572a3327 " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-
-                    <FadeUp delay={0.2} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation capsule h-62 text-sm text-center p-5 centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/priyanshu.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Priyanshu Kaushik</h2>
-                        <h3>Media Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/priyanshu_me7/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href=" " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-
-                    <FadeUp delay={0.3} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/aditya.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold ">Aditya Pratap Sisodia</h2>
-                        <h3>Logistic Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/_adiittyyaa_?igsh=MW8xdmRjMGhheHUyag==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/aditya-sisodia-33a314279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-                    <FadeUp delay={0.4} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/saanvi.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Saanvi Jindal</h2>
-                        <h3>Operations Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/s1v.ni?igsh=OWw0NjF2MjVxNGFp" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/saanvi-jindal-206222266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app  " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-
-                   
-
-                    <FadeUp delay={0.1} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/bhavya.png" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Bhavya Jain</h2>
-                        <h3>Graphic Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/based.bhavya?igsh=MXRua201Z2k4OWZtZA==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/bhavya-jain-28a89a311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-                    <FadeUp delay={0.2} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1
-                    float-animation capsule h-62 p-5 text-center text-sm centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/sonali.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Sonali Samal</h2>
-                        <h3>Finance Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/_samisded_/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/sonaliisamal/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-                     <FadeUp delay={0.3} className="transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 h-62
-                    float-animation capsule text-sm p-5 text-center centre flex-col w-2/5 md:w-1/5 gap-2">
-                        <img src="./images/prisha.jpg" alt="" className='rounded-full h-20 lg:h-30 md:h-40' />
-                        <h2 className="font-semibold">Prisha Rawat</h2>
-                        <h3>PR & Sponserships Head</h3>
-                        <div className="centre gap-5 text-2xl">
-                            <div className="capsule p-2">
-                                <a href="https://www.instagram.com/prisha_1.6?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                                    <FaInstagram />
-                                </a></div>
-                            <div className="capsule p-2">
-                                <a href="https://www.linkedin.com/in/prisha-rawat-63949b322 " target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                                    <FaLinkedin />
-                                </a></div>
-                        </div>
-                    </FadeUp>
-                </div>
+                ))}
             </div>
-        </>
-    )
-}
 
-export default team
+            <h1 className='text-center text-5xl font-bold p-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Our Team</h1>
+            <div className="centre flex-wrap w-full gap-5">
+                {teamMembers.map((member, index) => (
+                    <FadeUp key={index} delay={0.1 + index * 0.1} className="relative group transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2 shadow-2xs hover:shadow-2xl hover:shadow-purple-500">
+                        <div className="absolute w-full h-full border-0 rounded-6xl  bg-gradient-to-r from-red-800/20 to-orange-500/20  opacity-0 group-hover:opacity-30 shadow-2xs group-hover:shadow-2xl group-hover:shadow-red-500 z-0"></div>
+                        <img src={member.img} alt={member.name} className='rounded-full h-20 lg:h-30 md:h-40' />
+                        <h2 className="font-semibold">{member.name}</h2>
+                        <h3>{member.role}</h3>
+                        <div className="centre gap-5 text-2xl z-10">
+                            {member.instagram && (
+                                <div className="capsule p-2">
+                                    <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
+                                        <FaInstagram />
+                                    </a>
+                                </div>
+                            )}
+                            {member.linkedin && (
+                                <div className="capsule p-2">
+                                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                                        <FaLinkedin />
+                                    </a>
+                                </div>
+                            )}
+                        </div>
+                        
+                    </FadeUp>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default Team;
