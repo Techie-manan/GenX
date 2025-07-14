@@ -21,16 +21,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-[100vw] px-[5vw] py-5 bg-black/50 backdrop-blur-xl text-white rounded-b-2xl">
+    <div className="fixed top-0 left-0 right-0 z-50 w-[100vw] px-[5vw] py-2 bg-black/50 backdrop-blur-xl text-white rounded-b-2xl">
+      
+          <img src="./images/genesis.png" alt="" className='h-20 sm:h-25 absolute -top-2 right-0' />
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScroll('home')}>
-          <img src="logo.PNG" alt="logo" className="h-15 rounded-full" />
+          <img src="logo.PNG" alt="logo" className="h-12 sm:h-15 rounded-full" />
           <h1 className="text-xl font-bold">0xGenIgnite</h1>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-7 font-semibold">
+        <ul className="hidden lg:flex gap-7 font-semibold mr-30">
           <li onClick={() => handleScroll('home')} className="cursor-pointer hover:text-fuchsia-400">Home</li>
           <li onClick={() => handleScroll('about')} className="cursor-pointer hover:text-fuchsia-400">About</li>
           <li onClick={() => handleScroll('events')} className="cursor-pointer hover:text-fuchsia-400">Timeline</li>
@@ -39,16 +41,19 @@ const Navbar = () => {
           <li onClick={() => handleScroll('faq')} className="cursor-pointer hover:text-fuchsia-400">FAQs</li>
           <li onClick={() => handleScroll('contact')} className="cursor-pointer hover:text-fuchsia-400">Contact</li>
         </ul>
-
+        
+  
         {/* Mobile Toggle */}
-        <div className="md:hidden">
+        <div className="lg:hidden mr-30">
           {isOpen ? (
             <FiX className="text-3xl cursor-pointer" onClick={() => setIsOpen(false)} />
           ) : (
             <FiMenu className="text-3xl cursor-pointer" onClick={() => setIsOpen(true)} />
           )}
         </div>
+        
       </div>
+
 
       {/* Mobile Dropdown Menu */}
       <AnimatePresence>
