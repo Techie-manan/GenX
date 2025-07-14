@@ -55,56 +55,56 @@ const About = () => {
                     </FadeUp>
                 </div>
 
-                <div>
-                    <img src="./images/planet.png" alt="" className='opacity-30 '/>
-                </div>
-                {/* Clean Themes Section */}
-                <div className='text-center py-16 mt-20'>
-                    <h1 className='text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-12'>
-                        Themes
-                    </h1>
+                <div className='relative md:h-[90vh] w-[100vw] overflow-hidden'>
+                    {/* <img src="./images/planet.png" alt="" className='opacity-30 absolute top-0 right-0 z-0' /> */}
+                    <img src="./images/space.png" alt="" className='opacity-50 w-[100vw] h-[60vh] absolute bottom-0 z-0' />
 
-                    <div className='max-w-6xl mx-auto px-6 lg:px-8'>
-                        <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-                            {/* Web3 Card */}
-                            <FadeUp>
-                                <div className='relative h-64 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
-                                    <div className='absolute inset-0 bg-[url("/images/web3.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
-                                    <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
-                                    <div className='absolute bottom-6 left-6 right-6'>
-                                        <h3 className='text-2xl font-bold text-white'>Web3</h3>
-                                    </div>
-                                </div>
-                            </FadeUp>
+                    {/* Clean Themes Section */}
+                    <div className='text-center py-16 z-20'>
+                        <h1 className='text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-12'>
+                            Themes
+                        </h1>
 
-                            {/* AI x Web3 Fusion Card */}
-                            <FadeUp delay={0.2}>
-                                <div className='relative h-64 rounded-3xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-md border border-white/10 hover:border-pink-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
-                                    <div className='absolute inset-0 bg-[url("/images/fusion.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
-                                    <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
-                                    <div className='absolute bottom-6 left-6 right-6'>
-                                        <h3 className='text-2xl font-bold text-white'>AI x Web3 Fusion</h3>
+                        <div className='max-w-6xl mx-auto px-6 lg:px-8'>
+                            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                                {/* Web3 Card */}
+                                <FadeUp>
+                                    <div className='relative h-64 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden '>
+                                        <div className='absolute inset-0 bg-[url("/images/web3.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
+                                        <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
+                                        <div className='absolute bottom-6 left-6 right-6'>
+                                            <h3 className='text-2xl font-bold text-white'>Web3</h3>
+                                        </div>
                                     </div>
-                                </div>
-                            </FadeUp>
+                                </FadeUp>
 
-                            {/* AI Card */}
-                            <FadeUp delay={0.4}>
-                                <div className='relative h-64 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
-                                    <div className='absolute inset-0 bg-[url("/images/ai.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
-                                    <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
-                                    <div className='absolute bottom-6 left-6 right-6'>
-                                        <h3 className='text-2xl font-bold text-white'>AI</h3>
+                                {/* AI x Web3 Fusion Card */}
+                                <FadeUp delay={0.2}>
+                                    <div className='relative h-64 rounded-3xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border border-white/10 hover:border-pink-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
+                                        <div className='absolute inset-0 bg-[url("/images/fusion.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
+                                        <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
+                                        <div className='absolute bottom-6 left-6 right-6'>
+                                            <h3 className='text-2xl font-bold text-white'>AI x Web3 Fusion</h3>
+                                        </div>
                                     </div>
-                                </div>
-                            </FadeUp>
+                                </FadeUp>
+
+                                {/* AI Card */}
+                                <FadeUp delay={0.4}>
+                                    <div className='relative h-64 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
+                                        <div className='absolute inset-0 bg-[url("/images/ai.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
+                                        <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
+                                        <div className='absolute bottom-6 left-6 right-6'>
+                                            <h3 className='text-2xl font-bold text-white'>AI</h3>
+                                        </div>
+                                    </div>
+                                </FadeUp>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div>
-                    <img src="./images/space.png" alt="" className='opacity-50 w-[100vw]'/>
-                </div>
             </div>
         </>
     )
