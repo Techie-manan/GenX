@@ -55,6 +55,9 @@ const About = () => {
                     </FadeUp>
                 </div>
 
+                <div>
+                    <img src="./images/planet.png" alt="" className='opacity-30 '/>
+                </div>
                 {/* Clean Themes Section */}
                 <div className='text-center py-16 mt-20'>
                     <h1 className='text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-12'>
@@ -97,6 +100,10 @@ const About = () => {
                             </FadeUp>
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <img src="./images/space.png" alt="" className='opacity-50 w-[100vw]'/>
                 </div>
             </div>
         </>
