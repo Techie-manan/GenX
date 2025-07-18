@@ -14,9 +14,9 @@ const home = () => {
     };
 
     const handleRegister = () => {
-        console.log('Register button clicked');
-        alert('Registration coming soon! Stay tuned for updates.');
-    };
+    console.log('Register button clicked');
+    window.open('https://unstop.com/p/0xgenignite-genesis-community-1514498?lb=SxsXT0sz', '_blank');
+};
 
     return (
         <>

@@ -67,7 +67,7 @@ const Team = () => {
             <div className="centre flex-wrap w-full gap-5">
                 {judges.map((judge, index) => (
                     <FadeUp key={index} delay={index * 0.2} className="group transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 float-animation text-center capsule p-5 centre flex-col w-2/5 md:w-1/5 gap-2 relative">
-                        <div className="absolute w-full h-full border-0 rounded-6xl  bg-gradient-to-r from-red-800/20 to-orange-500/20  opacity-0 group-hover:opacity-30 shadow-2xs group-hover:shadow-2xl group-hover:shadow-red-500 z-10"></div>
+                        <div className="absolute w-full h-full border-0 rounded-6xl  bg-gradient-to-r from-blue-300/50 to-cyan-200/60  opacity-0 group-hover:opacity-30 shadow-2xs group-hover:shadow-2xl group-hover:shadow-blue-500 z-10"></div>
                         <img src={judge.img} alt={judge.name} className='rounded-full' />
                         <h2>{judge.name}</h2>
                         <h3>{judge.role}</h3>
@@ -80,7 +80,7 @@ const Team = () => {
             <div className="centre flex-wrap w-full gap-5">
                 {teamMembers.map((member, index) => (
                     <FadeUp key={index} delay={0.1 + index * 0.1} className="relative group transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 float-animation capsule h-62 p-5 text-sm text-center centre flex-col w-2/5 md:w-1/5 gap-2 shadow-2xs hover:shadow-2xl hover:shadow-purple-500">
-                        <div className="absolute w-full h-full border-0 rounded-6xl  bg-gradient-to-r from-red-800/20 to-orange-500/20  opacity-0 group-hover:opacity-30 shadow-2xs group-hover:shadow-2xl group-hover:shadow-red-500 z-0"></div>
+                        <div className="absolute w-full h-full border-0 rounded-6xl  bg-gradient-to-r from-red-800/20 to-orange-500/30  opacity-0 group-hover:opacity-30 shadow-2xs group-hover:shadow-2xl group-hover:shadow-red-500 z-0"></div>
                         <img src={member.img} alt={member.name} className='rounded-full h-20 lg:h-30 md:h-40' />
                         <h2 className="font-semibold">{member.name}</h2>
                         <h3>{member.role}</h3>

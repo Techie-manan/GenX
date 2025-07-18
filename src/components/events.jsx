@@ -225,7 +225,7 @@ const Events = () => {
 
     return (
         <>
-            <div id='events' className='z-10 text-white bg pt-10 pb-20 relative overflow-hidden' style={{ backgroundColor: '#05011a' }}>
+            <div id='events' className='z-10 text-white bg pb-10 relative overflow-hidden' style={{ backgroundColor: '#05011a' }}>
                 {/* Cosmic Background Effects */}
                 <div className='absolute inset-0 overflow-hidden'>
                     <div className='absolute top-20 left-10 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-75'></div>

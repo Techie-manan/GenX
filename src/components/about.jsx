@@ -7,7 +7,7 @@ const About = () => {
             <div className='h-[10vh] bub w-[100vw] px-[5vw] pb-5'> </div>
             <div className='z-10 text-white bg' id='about'>
                 {/* Clean Title */}
-                <div className='text-center py-16'>
+                <div className='text-center pb-16'>
                     <h1 className='text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>
                         About Us
                     </h1>
@@ -57,7 +57,7 @@ const About = () => {
 
                 <div className='relative md:h-[90vh] w-[100vw] overflow-hidden'>
                     {/* <img src="./images/planet.png" alt="" className='opacity-30 absolute top-0 right-0 z-0' /> */}
-                    <img src="./images/space.png" alt="" className='opacity-50 w-[100vw] h-[60vh] absolute bottom-0 z-0' />
+                    {/* <img src="./images/space.png" alt="" className='opacity-50 w-[100vw] h-[60vh] absolute bottom-0 z-0' /> */}
 
                     {/* Clean Themes Section */}
                     <div className='text-center py-16 z-20'>
