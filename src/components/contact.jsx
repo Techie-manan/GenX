@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
 import { FaInstagram, FaLinkedin, FaXTwitter, FaDiscord, FaWhatsapp } from "react-icons/fa6";
+import { SiLinktree } from 'react-icons/si';
 
 const contact = () => {
     return (
@@ -27,10 +28,13 @@ const contact = () => {
                                     <FaXTwitter />
                                 </a></div>
                             <div className="capsule p-2">
-                                <a href="https://discord.gg/TTmJExU3" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500 transition-colors">
+                                <a href="https://discord.gg/MrnnGPsGyf" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500 transition-colors">
                                     <FaDiscord />
                                 </a></div>
-                            
+                            <div className="capsule p-2">
+                                <a href="https://linktr.ee/0xGenIgnite" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
+                                    <SiLinktree />
+                                </a></div>
                         </div>
                     </div>
                     <h3 className='text-center text-sm font-semibold p-1'>2025 0xGenIgnite  All rights reserved</h3>
