@@ -4,46 +4,48 @@ import FaqItem from './OnscrollAni/FaqItem.jsx';
 
 const Faq = () => {
   const faqList = [
-    {
-      question: 'What is 0xGenIgnite?',
-      answer:
-        "0xGenIgnite is not just another hackathon; it's a tech festival of innovation, culminating in a spectacular grand conclusion. We are bringing together the brightest, most ambitious tech talent from across the region for an unparalleled journey of coding, creativity, and problem solving."
-    },
-    {
-      question: 'Who can attend the hackathon?',
-      answer:
-        'We invite any high school, undergraduate, or graduate students to participate in HackMela! You do not need to be enrolled at SRM University to attend, but the event will be taking place at the University.'
-    },
-    {
-      question: 'How do I register?',
-      answer:
-        'You can register by filling out the registration form, by clicking the registration button on the home page of this site! which will take you to the 0xgenignite dashboard on Unstop.'
-    },
-    {
-      question: 'What do I make?',
-      answer:
-        'You can make anything you want! Web3 or AI based projects are all encouraged and welcome! However, we strongly discourage building upon existing projects, as they will not be eligible for prizes.'
-    },
-    {
-      question: 'What is the cost to attend it?',
-      answer: 'HackMela is FREE to participate for all Techies!!'
-    },
-    {
-      question: 'What should I bring?',
-      answer:
-        'Hackathon Survival Kit:\nDon’t Forget! Laptop & Charger: Your ultimate power duo! Headphones: For that perfect focus vibe. Pillow/Blanket: Nap like a champ! Deodorant: Stay fresh, stay cool. Pack smart, hack smarter! Let’s go!'
-    },
-    {
-      question: 'I applied! What happens next?',
-      answer:
-        "We will be reviewing applications on a rolling basis, so keep an eye on your email - that's how you'll hear back from us about decisions."
-    },
-    {
-      question: 'Will there be FREE FOOD provided?',
-      answer:
-        'Yes, and we accommodate all dietary restrictions, including vegans, vegetarians, halal, Gluten Free, and all allergies! Simply inform us of any such restrictions on the registration form!'
-    }
-  ];
+  {
+    question: "So… what exactly is 0xGenIgnite? A sci-fi sequel?",
+    answer:
+      "Close. But instead of aliens, we have coders. 0xGenIgnite is a full-blown tech fiesta — think innovation, caffeine, chaos, and code. It’s the Avengers Assemble moment of builders. Minus the capes (unless you bring your own)."
+  },
+  {
+    question: "Can I attend, or is this an elite coder cult?",
+    answer:
+      "If you're a high schooler, college student, or someone who knows how to click buttons and dream big — you're in. No cult robes required, just curiosity and caffeine."
+  },
+  {
+    question: "Okay, but how do I even register?",
+    answer:
+      "Click that giant 'Register' button you definitely didn't miss on our homepage. It'll teleport you straight to Unstop — no magic wand required."
+  },
+  {
+    question: "What can I build? A rocket? A toaster that tweets?",
+    answer:
+      "Honestly, yes. Build anything that doesn’t already exist on GitHub. Web3? AI? Crypto-powered coffee machines? If it’s original and solves *something*, you're golden."
+  },
+  {
+    question: "How much do I need to bribe you to attend?",
+    answer:
+      "Zero. Nada. Zilch. It’s 100% free. Just bring vibes, brains, and maybe a deodorant stick. (Seriously.)"
+  },
+  {
+    question: "What should I pack — aside from dreams and anxiety?",
+    answer:
+      "Laptop (duh), charger (don’t forget it, please), headphones (your noise-canceling bffs), a pillow (you *will* crash), and your favorite hoodie. Bonus: deodorant = friends."
+  },
+  {
+    question: "I applied. Now what? Do I just wait and age?",
+    answer:
+      "Patience, young Padawan. We review applications in waves. You’ll hear from us via email — no carrier pigeons involved."
+  },
+  {
+    question: "Be honest… is there free food or just broken dreams?",
+    answer:
+      "Oh, we FEED you. And yes, we respect all diets — vegan, gluten-free, oxygenarian... just let us know. No hacker codes hungry."
+  }
+];
+
   
 
   return (
