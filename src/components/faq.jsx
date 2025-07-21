@@ -17,7 +17,7 @@ const Faq = () => {
     {
       question: 'How do I register?',
       answer:
-        'You can register by filling out the registration form, by clicking the registration button on the home page of this site! which will take you to the HackMela1.0 dashboard on Devfolio.'
+        'You can register by filling out the registration form, by clicking the registration button on the home page of this site! which will take you to the 0xgenignite dashboard on Unstop.'
     },
     {
       question: 'What do I make?',
@@ -44,9 +44,10 @@ const Faq = () => {
         'Yes, and we accommodate all dietary restrictions, including vegans, vegetarians, halal, Gluten Free, and all allergies! Simply inform us of any such restrictions on the registration form!'
     }
   ];
+  
 
   return (
-    <div id='faq' className='z-10 text-white bg pt-10 px-[5vw]'>
+    <div id='faq' className='z-10 text-white bg pt-10 px-[5vw] pb-5'>
       <h1 className='text-center text-5xl font-bold p-5 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>FAQs</h1>
       <div className='flex justify-center flex-col md:flex-row w-full gap-6'>
         <div className='flex flex-col gap-3 md:w-1/2'>

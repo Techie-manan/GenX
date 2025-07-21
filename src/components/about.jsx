@@ -55,7 +55,7 @@ const About = () => {
                     </FadeUp>
                 </div>
 
-                <div className='relative md:h-[90vh] w-[100vw] overflow-hidden'>
+                <div className='relative w-[100vw] overflow-hidden'>
                     {/* <img src="./images/planet.png" alt="" className='opacity-30 absolute top-0 right-0 z-0' /> */}
                     {/* <img src="./images/space.png" alt="" className='opacity-50 w-[100vw] h-[60vh] absolute bottom-0 z-0' /> */}
 

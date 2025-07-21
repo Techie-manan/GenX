@@ -298,7 +298,7 @@ const Events = () => {
                                     </div>
 
                             {/* INSANE Event Card */}
-                            <div className={`ml-6 md:ml-0 md:w-4/12 ${index % 2 === 0 ? 'md:mr-140' : 'md:ml-140'}`}>
+                            <div className={`ml-6 md:ml-0 md:w-4/12 ${index % 2 === 0 ? 'md:mr-[40vw]' : 'md:ml-[40vw]'}`}>
                                 <div
                                     className={`relative p-8 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20 transition-all duration-700 transform hover:scale-110 hover:-translate-y-3 hover:rotate-1 shadow-2xl group-hover:shadow-3xl overflow-hidden
                                                     ${hoveredEvent === index ? 'border-purple-400/60 shadow-purple-500/30' : 'hover:border-purple-400/40'}

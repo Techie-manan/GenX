@@ -8,7 +8,8 @@ const FaqItem = ({ question, answer }) => {
 
   return (
     <motion.div
-      className='faq-item p-5 rounded-lg bg-black/20 backdrop-blur-md shadow-md'
+      className='faq-item p-5 rounded-lg bg-black/20 backdrop-blur-md shadow-md cursor-pointer'
+      onClick={() => setIsOpen(!isOpen)}
       whileHover={{
         scale: 1.05,
         boxShadow: '0px 8px 20px rgba(168, 85, 247, 0.5)' // Tailwind's purple-500
@@ -16,8 +17,8 @@ const FaqItem = ({ question, answer }) => {
       transition={{ type: 'spring', stiffness: 300 }}
     >
       <div
-        className='flex items-center justify-between cursor-pointer'
-        onClick={() => setIsOpen(!isOpen)}
+        className='flex items-center justify-between'
+        
       >
         <h2 className='text-xl font-semibold'>{question}</h2>
         <motion.div
