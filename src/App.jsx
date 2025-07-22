@@ -8,6 +8,7 @@ import Sponsers from "./components/sponsers";
 import Faq from "./components/faq";
 import Contact from "./components/contact";
 import Events from "./components/events";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Sponsers />
         <Faq />
         <Contact />
+         <Analytics />
       </div>
     </>
   );
