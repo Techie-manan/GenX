@@ -41,6 +41,9 @@
     text-shadow: 5px 5px 10px rgba(241, 14, 14, 0.4);
 }
 
+.bg- {
+    background-color: #f7eded;
+} 
 .capsule {
     box-shadow: inset 0px 0px 16px 0px rgba(255, 255, 255, 0.08);
     border-radius: 50px;

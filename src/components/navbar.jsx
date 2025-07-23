@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-[100vw] px-[5vw] py-2 bg-black/50 backdrop-blur-xl text-white rounded-b-2xl">
-      <div className='bg-white p-1 pb-8 rounded-b-full absolute top-0 right-5'>
+      <div className='bg- p-1 pb-8 rounded-b-full absolute top-0 right-2 sm:right-5'>
         <img src="./images/genesis.png" alt="" className='h-15 sm:h-15 ' />
       </div>
       <div className="flex items-center justify-between">
