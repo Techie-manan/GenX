@@ -53,7 +53,7 @@ const teamMembers = [
     },
     {
         name: "Prisha Rawat",
-        role: "PR & Sponserships Head",
+        role: "PR & Sponsorships Head",
         img: "./images/prisha.jpg",
         instagram: "https://www.instagram.com/prisha_1.6?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         linkedin: "https://www.linkedin.com/in/prisha-rawat-63949b322",
