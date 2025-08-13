@@ -28,7 +28,7 @@ const About = () => {
                                 </h2>
                             </div>
                             <p className='text-lg text-gray-300 leading-relaxed'>
-                                Welcome to 0xGenIgnite — the ultimate battlefield where brilliance meets code and the future is built. This two-day flagship event isn’t just a hackathon — it’s a high-voltage launchpad for Gen-Z innovators ready to disrupt. From a celebrity-led kickoff to an intense 24-hour no-sleep, all-brain hackathon, it's where bold ideas turn real. Whether it’s AI, Web3, or something the world hasn’t seen yet — if you’ve got the spark, 0xGenIgnite will ignite it.
+                                Welcome to 0xGenIgnite — the ultimate battlefield where brilliance meets code and the future is built. This two-day flagship event isn’t just a hackathon — it’s a high-voltage launchpad for Gen-Z innovators ready to disrupt. From a celebrity-led kickoff to an intense 24-hour no-sleep, all-brain hackathon, it's where bold ideas turn real. Whether it’s Web3, or something the world hasn’t seen yet — if you’ve got the spark, 0xGenIgnite will ignite it.
                             </p>
                             {/* </div> */}
 
@@ -36,7 +36,7 @@ const About = () => {
                     </FadeUp>
 
                     {/* CodeX Card */}
-                    <FadeUp delay={0.2}>
+                    {/* <FadeUp delay={0.2}>
                         <div className='relative p-8 md:p-12 rounded-3xl bg-black/20 backdrop-blur-md border border-white/10 hover:border-red-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/10 group'>
                             <div className='flex gap-4'>
                                 <div className='w-12 h-12  rounded-2xl flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300'>
@@ -52,7 +52,7 @@ const About = () => {
                             </p>
 
                         </div>
-                    </FadeUp>
+                    </FadeUp> */}
                 </div>
 
                 <div className='relative w-[100vw] overflow-hidden'>
@@ -65,12 +65,12 @@ const About = () => {
                             Themes
                         </h1>
 
-                        <div className='max-w-6xl mx-auto px-6 lg:px-8'>
-                            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                        <div className='w-[80vw] lg:w-[60vw] mx-auto px-6 lg:px-8'>
+                            {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-8'> */}
                                 {/* Web3 Card */}
                                 <FadeUp>
                                     <div className='relative h-64 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden '>
-                                        <div className='absolute inset-0 bg-[url("/images/web3.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
+                                        <div className='absolute inset-0 bg-[url("/images/web33.jpeg")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
                                         <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
                                         <div className='absolute bottom-6 left-6 right-6'>
                                             <h3 className='text-2xl font-bold text-white'>Web3</h3>
@@ -78,7 +78,7 @@ const About = () => {
                                     </div>
                                 </FadeUp>
 
-                                {/* AI x Web3 Fusion Card */}
+                                {/* AI x Web3 Fusion Card
                                 <FadeUp delay={0.2}>
                                     <div className='relative h-64 rounded-3xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border border-white/10 hover:border-pink-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
                                         <div className='absolute inset-0 bg-[url("/images/fusion.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
@@ -90,16 +90,16 @@ const About = () => {
                                 </FadeUp>
 
                                 {/* AI Card */}
-                                <FadeUp delay={0.4}>
+                                {/* <FadeUp delay={0.4}>
                                     <div className='relative h-64 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:scale-105 group overflow-hidden'>
                                         <div className='absolute inset-0 bg-[url("/images/ai.png")] bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
                                         <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
                                         <div className='absolute bottom-6 left-6 right-6'>
                                             <h3 className='text-2xl font-bold text-white'>AI</h3>
                                         </div>
-                                    </div>
-                                </FadeUp>
-                            </div>
+                                    </div> */} 
+                                {/* </FadeUp> */}
+                            {/* </div> */}
                         </div>
                     </div>
 

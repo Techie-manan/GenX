@@ -22,9 +22,9 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-[100vw] px-[5vw] py-2 bg-black/50 backdrop-blur-xl text-white rounded-b-2xl">
-      <div className='bg- p-1 pb-8 rounded-b-full absolute top-0 right-2 sm:right-5'>
+      {/* <div className='bg- p-1 pb-8 rounded-b-full absolute top-0 right-2 sm:right-5'>
         <img src="./images/genesis.png" alt="" className='h-15 sm:h-15 ' />
-      </div>
+      </div> */}
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScroll('home')}>
@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex gap-7 font-semibold mr-10">
+        <ul className="hidden lg:flex gap-7 font-semibold">
           {/* <li onClick={() => handleScroll('home')} className="cursor-pointer hover:text-fuchsia-400">Home</li> */}
           <li onClick={() => handleScroll('about')} className="cursor-pointer hover:text-fuchsia-400">About</li>
           <li onClick={() => handleScroll('events')} className="cursor-pointer hover:text-fuchsia-400">Timeline</li>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
 
         {/* Mobile Toggle */}
-        <div className="lg:hidden mr-20 sm:mr-15">
+        <div className="lg:hidden ">
           {isOpen ? (
             <FiX className="text-3xl cursor-pointer" onClick={() => setIsOpen(false)} />
           ) : (
